@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-page-i18n="metaTitle">The Adèle Archive: The First Gospel</title>
+  <meta name="description" content="A text-editing interactive experience about how a woman’s refusal becomes scripture." data-page-meta-description />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/lang.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+  <div class="site-header__inner container">
+    <a class="site-brand" href="index.html#start" aria-label="The Adèle Archive Home">
+      <span class="site-brand__mark">A</span>
+      <span class="site-brand__text" data-i18n="nav.brand">THE ADÈLE ARCHIVE</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html#start" class="site-nav__link" data-i18n="nav.start">Start Here</a>
+      <a href="main-project.html" class="site-nav__link" data-i18n="projects.mainProject.shortTitle">Main Project</a>
+      <a href="index.html#reading-path" class="site-nav__link" data-i18n="nav.path">Reading Path</a>
+      <a href="index.html#projects" class="site-nav__link" data-i18n="nav.projects">Projects</a>
+      <a href="index.html#digital-archive" class="site-nav__link" data-i18n="nav.digitalArchive">Digital Archive</a>
+      <a href="contact.html" class="site-nav__link" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" aria-label="Reading language">
+        <span class="lang-switch__label" data-i18n="meta.languageLabel">Reading Language</span>
+        <button class="lang-switch__button is-active" type="button" data-lang-button="en" aria-pressed="true">EN</button>
+        <button class="lang-switch__button" type="button" data-lang-button="zh" aria-pressed="false">中文</button>
+      </div>
+
+      <button class="mobile-menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" data-action="toggle-menu">
+        <span data-i18n="nav.menu">Menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+      <a href="index.html#start" class="mobile-menu__link" data-i18n="nav.start">Start Here</a>
+      <a href="main-project.html" class="mobile-menu__link" data-i18n="projects.mainProject.shortTitle">Main Project</a>
+      <a href="index.html#reading-path" class="mobile-menu__link" data-i18n="nav.path">Reading Path</a>
+      <a href="index.html#projects" class="mobile-menu__link" data-i18n="nav.projects">Projects</a>
+      <a href="index.html#digital-archive" class="mobile-menu__link" data-i18n="nav.digitalArchive">Digital Archive</a>
+      <a href="contact.html" class="mobile-menu__link" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="mobile-menu__lang">
+      <span class="mobile-menu__lang-label" data-i18n="meta.languageLabel">Reading Language</span>
+      <button type="button" data-lang-button="en">EN</button>
+      <button type="button" data-lang-button="zh">中文</button>
+    </div>
+  </div>
+</header>
+
+  <main id="main-content">
+    <section class="section hero-section project-page-hero" id="project-header" aria-labelledby="project-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-page-i18n="eyebrow">COMPANION PROJECT</p>
+          <h1 class="hero-title" id="project-title" data-page-i18n="title">Project Title</h1>
+          <p class="hero-subtitle" data-page-i18n="subtitle">Project subtitle.</p>
+
+          <div class="button-group access-card__actions">
+            <a class="button button-primary" href="assets/pdfs/The_Adele_Archive_The_First_Gospel_One_Page_Pitch.pdf" download data-i18n="buttons.downloadPitch">Download One-page Pitch</a>
+            <button
+  class="button button-secondary"
+  type="button"
+  data-copy-email="samantha201223@163.com"
+  data-i18n="buttons.requestSampleKit"
+>
+  Request Sample Kit
+</button>
+            <a class="button button-secondary" href="index.html#reading-path" data-i18n="buttons.backToReadingPath">Back to Reading Path</a>
+          </div>
+          <p class="download-note" data-i18n="common.pdfPrivateReview">PDF for private review only.</p>
+        </div>
+
+        <aside class="hero-panel" aria-label="Project summary">
+          <p class="hero-panel__label" data-page-template="projectFileLabel">PROJECT FILE</p>
+          <dl class="project-meta project-meta--hero">
+            <div class="project-meta__item"><dt data-i18n="common.format">Format</dt><dd data-page-i18n="meta.format">Format value</dd></div>
+            <div class="project-meta__item"><dt data-i18n="common.players">Players</dt><dd data-page-i18n="meta.players">Players value</dd></div>
+            <div class="project-meta__item"><dt data-i18n="common.duration">Duration</dt><dd data-page-i18n="meta.duration">Duration value</dd></div>
+            <div class="project-meta__item"><dt data-i18n="common.status">Status</dt><dd data-page-i18n="meta.status">Status value</dd></div>
+          </dl>
+          <div class="tag-list hero-tags" data-page-tags="tags"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="one-sentence-pitch" aria-labelledby="one-sentence-pitch-title">
+      <div class="container world-grid">
+        <div class="section-copy">
+          <div class="section-header">
+            <p class="eyebrow" data-page-template="sections.oneSentencePitch.eyebrow">ONE-SENTENCE PITCH</p>
+            <h2 class="section-title" id="one-sentence-pitch-title" data-page-template="sections.oneSentencePitch.title">One-sentence Pitch</h2>
+          </div>
+          <div class="prose content-narrow"><p data-page-i18n="oneSentencePitch">One clear sentence explaining the project.</p></div>
+        </div>
+        <aside class="index-panel" aria-label="Project page index">
+          <p class="index-panel__label" data-page-template="readingOrderLabel">READING ORDER</p>
+          <div class="tag-list tag-list--vertical">
+            <a class="tag" href="#premise" data-page-template="sections.premise.title">Premise</a>
+            <a class="tag" href="#player-experience" data-page-template="sections.playerExperience.title">Player Experience</a>
+            <a class="tag" href="#core-mechanic" data-page-template="sections.coreMechanic.title">Core Mechanic</a>
+            <a class="tag" href="#development-potential" data-page-template="sections.developmentPotential.title">Development Potential</a>
+            <a class="tag" href="#relation" data-page-template="sections.relation.title">Relation</a>
+            <a class="tag" href="#content-note" data-page-template="sections.contentNote.title">Content Note</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section reading-path-section" id="format" aria-labelledby="format-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow" data-page-template="sections.format.eyebrow">FORMAT</p>
+          <h2 class="section-title" id="format-title" data-page-template="sections.format.title">Format / Players / Duration / Status</h2>
+        </div>
+        <div class="project-detail-grid">
+          <article class="path-card"><p class="path-card__number">01</p><h3 class="path-card__title" data-i18n="common.format">Format</h3><p class="path-card__description" data-page-i18n="formatDetails.format">Format detail.</p></article>
+          <article class="path-card"><p class="path-card__number">02</p><h3 class="path-card__title" data-i18n="common.players">Players</h3><p class="path-card__description" data-page-i18n="formatDetails.players">Players detail.</p></article>
+          <article class="path-card"><p class="path-card__number">03</p><h3 class="path-card__title" data-i18n="common.duration">Duration</h3><p class="path-card__description" data-page-i18n="formatDetails.duration">Duration detail.</p></article>
+          <article class="path-card"><p class="path-card__number">04</p><h3 class="path-card__title" data-i18n="common.status">Status</h3><p class="path-card__description" data-page-i18n="formatDetails.status">Status detail.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="premise" aria-labelledby="premise-title"><div class="container"><div class="section-header"><p class="eyebrow" data-page-template="sections.premise.eyebrow">PREMISE</p><h2 class="section-title" id="premise-title" data-page-template="sections.premise.title">Premise</h2></div><div class="prose content-narrow" data-page-list="premise"></div></div></section>
+
+    <section class="section reading-path-section" id="player-experience" aria-labelledby="player-experience-title"><div class="container"><div class="section-header"><p class="eyebrow" data-page-template="sections.playerExperience.eyebrow">PLAYER EXPERIENCE</p><h2 class="section-title" id="player-experience-title" data-page-template="sections.playerExperience.title">Player Experience</h2></div><div class="prose content-narrow" data-page-list="playerExperience"></div></div></section>
+
+    <section class="section" id="core-mechanic" aria-labelledby="core-mechanic-title">
+      <div class="container world-grid"><div class="section-copy"><div class="section-header"><p class="eyebrow" data-page-template="sections.coreMechanic.eyebrow">CORE MECHANIC</p><h2 class="section-title" id="core-mechanic-title" data-page-template="sections.coreMechanic.title">Core Mechanic</h2></div><div class="prose content-narrow" data-page-list="coreMechanic.body"></div></div><aside class="index-panel"><p class="index-panel__label" data-page-template="coreActionLabel">CORE ACTIONS</p><div class="tag-list tag-list--vertical" data-page-tags="coreMechanic.actions"></div></aside></div>
+    </section>
+
+    <section class="section reading-path-section" id="development-potential" aria-labelledby="development-potential-title"><div class="container"><div class="section-header"><p class="eyebrow" data-page-template="sections.developmentPotential.eyebrow">DEVELOPMENT POTENTIAL</p><h2 class="section-title" id="development-potential-title" data-page-template="sections.developmentPotential.title">Development Potential</h2></div><div class="prose content-narrow" data-page-list="developmentPotential.body"></div><div class="tag-list hero-tags" data-page-tags="developmentPotential.tags"></div></div></section>
+
+    <section class="section" id="relation" aria-labelledby="relation-title"><div class="container"><div class="section-header"><p class="eyebrow" data-page-template="sections.relation.eyebrow">RELATION TO THE ADÈLE ARCHIVE</p><h2 class="section-title" id="relation-title" data-page-template="sections.relation.title">Relation to The Adèle Archive</h2></div><div class="prose content-narrow" data-page-list="relation"></div></div></section>
+
+    <section class="section content-note-section" id="content-note" aria-labelledby="content-note-title"><div class="container"><article class="content-note"><div class="section-header"><p class="eyebrow" data-page-template="sections.contentNote.eyebrow">CONTENT NOTE</p><h2 class="section-title" id="content-note-title" data-page-template="sections.contentNote.title">Content Note</h2></div><div class="prose content-narrow" data-page-list="contentNote"></div><div class="content-note__tags"><span class="tag" data-i18n="risk.fictionalSystemLanguage">Fictional institutional language appears as part of the system being critiqued.</span><span class="tag" data-i18n="risk.noRomanticSuffering">The project does not romanticise suffering or sacrifice.</span><span class="tag" data-i18n="risk.religionNote">Fictional religious language is used to examine myth-making.</span></div></article></div></section>
+
+    <section class="section" id="sample-kit" aria-labelledby="sample-kit-title"><div class="container world-grid"><div class="section-copy"><div class="section-header"><p class="eyebrow" data-page-template="sections.materials.eyebrow">MATERIALS</p><h2 class="section-title" id="sample-kit-title" data-page-template="sections.materials.title">One-page Pitch & Sample Kit</h2></div><div class="prose content-narrow"><p data-page-i18n="materials.pitchNote">A one-page pitch is available for private review.</p><p data-page-i18n="materials.sampleKitNote">A short sample kit can be prepared upon request.</p></div><div class="button-group access-card__actions"><a class="button button-primary" href="assets/pdfs/The_Adele_Archive_The_First_Gospel_One_Page_Pitch.pdf" download data-i18n="buttons.downloadPitch">Download One-page Pitch</a><button
+  class="button button-secondary"
+  type="button"
+  data-copy-email="samantha201223@163.com"
+  data-i18n="buttons.contactAuthor"
+>
+  Contact the Author
+</button><a class="button button-secondary" href="index.html#reading-path" data-i18n="buttons.backToReadingPath">Back to Reading Path</a></div></div><aside class="index-panel"><p class="index-panel__label" data-page-template="sampleKitLabel">SAMPLE KIT MAY INCLUDE</p><div class="tag-list tag-list--vertical" data-page-tags="materials.sampleKitItems"></div></aside></div></section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title"><div class="container"><div class="contact-card"><div class="section-header"><p class="eyebrow" data-i18n="home.contact.eyebrow">CONTACT</p><h2 class="section-title" id="contact-title" data-page-template="sections.contact.title">Contact & Rights</h2></div><div class="prose content-narrow"><p data-i18n="home.contact.body">For invited review, collaboration discussion, development inquiry, or request for additional sample materials, please contact the author by email.</p><p><strong data-i18n="home.contact.emailLabel">Email</strong>: <a href="mailto:samantha201223@163.com">samantha201223@163.com</a></p><p><strong data-i18n="home.contact.locationLabel">Location</strong>: <span data-i18n="home.contact.location">China</span> · <strong data-i18n="home.contact.timezoneLabel">Time Zone</strong>: <span data-i18n="home.contact.timezone">UTC+8</span></p><p data-page-template="rightsNotice">All materials are selected development samples for private review only. Please do not reproduce, forward, adapt, or publicly share without the author’s permission.</p></div></div></div></section>
+  </main>
+
+  <footer class="site-footer" id="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__identity">
+      <p class="site-footer__name" data-i18n="footer.name">Samantha Zhu</p>
+      <p class="site-footer__role" data-i18n="footer.role">Writer / Interactive Narrative Designer</p>
+      <p class="site-footer__meta">
+        <span data-i18n="footer.location">China · UTC+8</span>
+        <span aria-hidden="true"> · </span>
+        <a href="mailto:samantha201223@163.com" data-i18n="footer.email">samantha201223@163.com</a>
+      </p>
+      <p class="site-footer__rights" data-i18n="footer.shortRights">© 2026 Samantha Zhu. All rights reserved. Shared for private review only.</p>
+    </div>
+
+    <nav class="site-footer__links" aria-label="Footer navigation">
+      <a href="index.html#reading-path" data-i18n="buttons.backToReadingPath">Back to Reading Path</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      <a href="#site-header" data-i18n="nav.backToTop">Back to top</a>
+    </nav>
+  </div>
+</footer>
+
+  <script>
+    window.PAGE_PROJECT_DATA = {
+  "en": {
+    "metaTitle": "The Adèle Archive: The First Gospel",
+    "metaDescription": "A text-editing interactive experience about how a woman’s refusal becomes scripture.",
+    "eyebrow": "COMPANION PROJECT",
+    "title": "The Adèle Archive: The First Gospel",
+    "subtitle": "A 2–3 player text-editing interactive experience about how a woman’s refusal becomes scripture.",
+    "meta": {
+      "format": "Text-editing interactive experience / tabletop archive theatre",
+      "players": "2–3 players + optional facilitator",
+      "duration": "Approx. 45–75 minutes",
+      "status": "In development / not publicly released"
+    },
+    "tags": [
+      "language",
+      "censorship",
+      "sacred text",
+      "authorship",
+      "institutional revision"
+    ],
+    "oneSentencePitch": "The First Gospel asks players to revise, censor, preserve, or sanctify Adèle’s original words, turning textual editing into an ethical act of authorship and institutional violence.",
+    "formatDetails": {
+      "format": "A small tabletop archive theatre piece built around text fragments, revision choices, and final canonical wording.",
+      "players": "Designed for 2–3 players, with optional facilitation for reading, timing, and final collation.",
+      "duration": "Approximately 45–75 minutes, suitable for workshop testing, intimate reading, or short-form interactive presentation.",
+      "status": "In development as a compact companion piece and possible sample format."
+    },
+    "premise": [
+      "Before Adèle becomes a Mother Goddess in public memory, someone must write the language that makes her readable as one.",
+      "The First Gospel takes place inside the first editorial process around her words. Players receive fragments of Adèle’s speech, notes, pain, fatigue, refusal, and unfinished testimony, then decide how those fragments will be revised for institutional use.",
+      "The experience is not an investigation. It is a writing room where refusal can become devotion, exhaustion can become grace, and a person can be turned into a sacred function one sentence at a time."
+    ],
+    "playerExperience": [
+      "Players handle short textual fragments and choose whether to preserve, soften, redact, rearrange, annotate, or sanctify them. The central action is editing, not deduction.",
+      "Each revision affects how Adèle will be remembered: as scientist, mother, victim, saint, risk, witness, or unstable voice. Players may feel that they are protecting her, protecting the public, protecting children, protecting the institution, or protecting themselves.",
+      "The final text becomes a proto-gospel: not because it is true, but because it is clean enough to be repeated."
+    ],
+    "coreMechanic": {
+      "body": [
+        "The core mechanic is institutional rewriting. Players receive original fragments and must choose from multiple handling options: keep the wording, revise it, redact it, footnote it, turn it into sacred language, or remove it from the record.",
+        "The tension comes from the fact that every option can be framed as care. Editing may make a text safer, clearer, more usable, or more beautiful, but it may also remove Adèle’s right to mean what she said."
+      ],
+      "actions": [
+        "revise text",
+        "redact fragments",
+        "preserve wording",
+        "sanctify language",
+        "compile gospel"
+      ]
+    },
+    "developmentPotential": {
+      "body": [
+        "The First Gospel is small, sharp, and workshop-friendly. It can run with printed cards, pencils, revision sheets, and a final reading of the compiled text.",
+        "It is especially suitable as a short companion experience, pre-show activity, writing-table installation, or low-cost English-language sample because it demonstrates the archive’s central concern through a simple, playable action."
+      ],
+      "tags": [
+        "text-led interaction",
+        "tabletop theatre",
+        "low-cost prototype",
+        "workshop-friendly",
+        "archive editing"
+      ]
+    },
+    "relation": [
+      "This piece connects directly to the larger archive through the figure of textual authority: how Adèle’s pain, silence, and refusal become official language before later generations inherit them as truth.",
+      "It helps explain how the Mother Goddess myth is not only built through violence or memory, but through grammar, selection, reverence, omission, and the quiet authority of edited text."
+    ],
+    "contentNote": [
+      "Content note: death, institutional control, bodily autonomy, religious language, censorship, psychological pressure, and implied coercion.",
+      "The religious language in this project is fictional and institutional. It is used to examine myth-making and textual control, not to represent, imitate, or attack any real-world religion.",
+      "The project does not endorse the institutional views expressed by edited or fictional sacred language.",
+      "The terms Gospel, scripture, sacred text, and sanctification refer to fictional institutional processes inside the story-world. They are used to examine how authority edits testimony, not to imitate, judge, or attack any real-world faith tradition.",
+      ],
+    "materials": {
+      "pitchNote": "A one-page pitch is available for private review as a concise overview of the project format and development direction.",
+      "sampleKitNote": "A short sample kit can be prepared upon request, including sample text fragments and editing rules.",
+      "sampleKitItems": [
+        "one-page pitch",
+        "sample text fragments",
+        "revision options",
+        "editor roles",
+        "final gospel template",
+        "content / safety note"
+      ]
+    }
+  },
+  "zh": {
+    "metaTitle": "阿黛勒档案：第一圣典",
+    "metaDescription": "一个文本编辑型互动体验，关于一个女人的拒绝如何被改写为圣典。",
+    "eyebrow": "可合作开发衍生项目",
+    "title": "阿黛勒档案：第一圣典",
+    "subtitle": "一个2–3人文本编辑型互动体验，关于一个女人的拒绝如何被改写为圣典。",
+    "meta": {
+      "format": "文本编辑型互动体验 / 桌面档案剧场",
+      "players": "2–3名玩家 + 可选主持人",
+      "duration": "约45–75分钟",
+      "status": "开发中 / 未公开发布"
+    },
+    "tags": [
+      "语言",
+      "审查",
+      "圣典文本",
+      "作者权",
+      "制度修订"
+    ],
+    "oneSentencePitch": "《第一圣典》让玩家修改、删节、保存或神圣化阿黛勒的原话，把文本编辑变成一种关于作者权、制度暴力与伦理责任的互动动作。",
+    "formatDetails": {
+      "format": "一个小型桌面档案剧场，围绕文本碎片、修订选择和最终圣典措辞展开。",
+      "players": "适合2–3名玩家，可配主持人负责阅读节奏、时间控制和最终汇编。",
+      "duration": "约45–75分钟，适合工作坊测试、亲密型阅读或短形式互动呈现。",
+      "status": "作为小型 companion piece 与可能的英文样本格式开发中。"
+    },
+    "premise": [
+      "在阿黛勒被公共记忆塑造成母神之前，必须先有人写出一种语言，让她能够被这样阅读。",
+      "《第一圣典》发生在围绕阿黛勒原话展开的第一场编辑过程中。玩家拿到她的语句、笔记、痛苦、疲惫、拒绝和未完成证词，并决定这些片段将如何被修订成制度可以使用的文本。",
+      "这不是调查，而是一间写作室。在这里，拒绝可以被改成奉献，疲惫可以被改成恩典，一个人可以在一句一句修订中被变成神圣功能。"
+    ],
+    "playerExperience": [
+      "玩家处理短文本碎片，并选择保留、柔化、删节、重排、批注或神圣化。核心行动不是推理，而是编辑。",
+      "每一次修订都会改变阿黛勒被记住的方式：她会被写成科学家、母亲、受害者、圣人、风险、见证者，还是“不稳定声音”。玩家可能以为自己是在保护她、保护公众、保护孩子、保护机构，或者保护自己。",
+      "最终文本会成为一份原始圣典。它不一定更真实，但它更干净、更适合被重复。"
+    ],
+    "coreMechanic": {
+      "body": [
+        "核心机制是制度化改写。玩家收到阿黛勒的原始片段，并必须从不同处理方式中选择：保留原句、修订、删节、加脚注、转化为神圣语言，或从记录中移除。",
+        "张力来自于：每一种选择都可以被包装成照护。编辑也许让文本更安全、更清楚、更可用、更美，但它也可能夺走阿黛勒解释自己话语的权利。"
+      ],
+      "actions": [
+        "修订文本",
+        "删节片段",
+        "保留原话",
+        "神圣化语言",
+        "汇编圣典"
+      ]
+    },
+    "developmentPotential": {
+      "body": [
+        "《第一圣典》体量小、锋利、适合工作坊。它可以通过纸质卡片、铅笔、修订表和最终朗读完成。",
+        "它非常适合作为短型 companion experience、演前活动、写作桌装置或低成本英文样本，因为它用一个简单可玩的动作展示了整个档案宇宙的核心问题。"
+      ],
+      "tags": [
+        "文本驱动互动",
+        "桌面剧场",
+        "低成本原型",
+        "适合工作坊",
+        "档案编辑"
+      ]
+    },
+    "relation": [
+      "这个作品通过“文本权威”直接连接母项目：阿黛勒的疼痛、沉默和拒绝，如何在后世继承它们之前，先被整理成官方语言。",
+      "它解释了母神神话并不只由暴力或记忆建成，也由语法、筛选、敬语、省略，以及被编辑文本所拥有的安静权威建成。"
+    ],
+    "contentNote": [
+      "内容提示：死亡、制度控制、身体自主权、宗教化语言、审查、心理压力与隐含强迫。",
+      "本项目中的宗教语言是虚构制度语言，用于讨论神话建构与文本控制，不指代、模仿或攻击任何现实宗教。",
+      "作品不认同被编辑文本或虚构圣典语言中呈现的制度立场。",
+      "“圣典”“福音”“神圣文本”“神圣化”等词语均指作品世界内部的虚构制度流程，用于讨论权力如何编辑证词，并不模仿、评判或攻击任何现实宗教传统。"
+    ],
+    "materials": {
+      "pitchNote": "本项目可提供一页英文 pitch，用于私人阅读与合作评估。",
+      "sampleKitNote": "如有需要，可准备短版 sample kit，包括文本碎片样例与编辑规则。",
+      "sampleKitItems": [
+        "一页 pitch",
+        "文本碎片样例",
+        "修订选项",
+        "编辑者角色",
+        "最终圣典模板",
+        "内容与安全说明"
+      ]
+    }
+  }
+};
+    window.PAGE_TEMPLATE_TEXT = {
+      en: {
+        projectFileLabel: 'PROJECT FILE', readingOrderLabel: 'READING ORDER', coreActionLabel: 'CORE ACTIONS', sampleKitLabel: 'SAMPLE KIT MAY INCLUDE',
+        sections: {
+          oneSentencePitch: {eyebrow:'ONE-SENTENCE PITCH', title:'One-sentence Pitch'},
+          format: {eyebrow:'FORMAT', title:'Format / Players / Duration / Status'},
+          premise: {eyebrow:'PREMISE', title:'Premise'},
+          playerExperience: {eyebrow:'PLAYER EXPERIENCE', title:'Player Experience'},
+          coreMechanic: {eyebrow:'CORE MECHANIC', title:'Core Mechanic'},
+          developmentPotential: {eyebrow:'DEVELOPMENT POTENTIAL', title:'Development Potential'},
+          relation: {eyebrow:'RELATION TO THE ADÈLE ARCHIVE', title:'Relation to The Adèle Archive'},
+          contentNote: {eyebrow:'CONTENT NOTE', title:'Content Note'},
+          materials: {eyebrow:'MATERIALS', title:'One-page Pitch & Sample Kit'},
+          contact: {title:'Contact & Rights'}
+        },
+        rightsNotice: 'All materials are selected development samples for private review only. Please do not reproduce, forward, adapt, or publicly share without the author’s permission.'
+      },
+      zh: {
+        projectFileLabel: '项目档案', readingOrderLabel: '阅读顺序', coreActionLabel: '核心动作', sampleKitLabel: '样章包可包含',
+        sections: {
+          oneSentencePitch: {eyebrow:'一句话提案', title:'一句话提案'},
+          format: {eyebrow:'项目形式', title:'形式 / 人数 / 时长 / 状态'},
+          premise: {eyebrow:'前提设定', title:'Premise / 前提设定'},
+          playerExperience: {eyebrow:'玩家体验', title:'Player Experience / 玩家体验'},
+          coreMechanic: {eyebrow:'核心机制', title:'Core Mechanic / 核心机制'},
+          developmentPotential: {eyebrow:'开发潜力', title:'Development Potential / 开发潜力'},
+          relation: {eyebrow:'与阿黛勒档案的关系', title:'Relation to The Adèle Archive / 与母项目的关系'},
+          contentNote: {eyebrow:'内容提示', title:'Content Note / 内容提示'},
+          materials: {eyebrow:'项目材料', title:'One-page Pitch 与 Sample Kit'},
+          contact: {title:'Contact & Rights / 联系方式与权利声明'}
+        },
+        rightsNotice: '本页面材料均为私人阅读与项目评估用的精选开发样本。未经作者许可，请勿复制、转发、改编或公开传播。'
+      }
+    };
+
+    (function () {
+      const STORAGE_KEY = 'adeleArchiveLanguage';
+      const DEFAULT_LANG = 'en';
+      function getByPath(object, path) {
+        return path.split('.').reduce((current, key) => current && Object.prototype.hasOwnProperty.call(current, key) ? current[key] : undefined, object);
+      }
+      function setText(selector, source) {
+        document.querySelectorAll(selector).forEach((node) => {
+          const path = node.getAttribute(selector.slice(1, -1));
+          const value = getByPath(source, path);
+          if (typeof value === 'string') node.textContent = value;
+        });
+      }
+      function renderList(source) {
+        document.querySelectorAll('[data-page-list]').forEach((container) => {
+          const list = getByPath(source, container.getAttribute('data-page-list'));
+          container.innerHTML = '';
+          if (!Array.isArray(list)) return;
+          list.forEach((item) => { const p = document.createElement('p'); p.textContent = item; container.appendChild(p); });
+        });
+      }
+      function renderTags(source) {
+        document.querySelectorAll('[data-page-tags]').forEach((container) => {
+          const tags = getByPath(source, container.getAttribute('data-page-tags'));
+          container.innerHTML = '';
+          if (!Array.isArray(tags)) return;
+          tags.forEach((item) => { const span = document.createElement('span'); span.className = 'tag'; span.textContent = item; container.appendChild(span); });
+        });
+      }
+      function applyPageLanguage(lang) {
+        if (!['en','zh'].includes(lang)) lang = DEFAULT_LANG;
+        const data = window.PAGE_PROJECT_DATA[lang];
+        const template = window.PAGE_TEMPLATE_TEXT[lang];
+        if (!data || !template) return;
+        document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+        document.documentElement.dataset.lang = lang;
+        document.title = data.metaTitle || document.title;
+        const desc = document.querySelector('[data-page-meta-description]');
+        if (desc && data.metaDescription) desc.setAttribute('content', data.metaDescription);
+        setText('[data-page-i18n]', data);
+        setText('[data-page-template]', template);
+        renderList(data);
+        renderTags(data);
+        document.querySelectorAll('[data-lang-button]').forEach((button) => {
+          const active = button.getAttribute('data-lang-button') === lang;
+          button.classList.toggle('is-active', active);
+          button.setAttribute('aria-pressed', String(active));
+        });
+      }
+      document.addEventListener('DOMContentLoaded', () => {
+        const saved = localStorage.getItem(STORAGE_KEY) || DEFAULT_LANG;
+        applyPageLanguage(saved);
+        document.querySelectorAll('[data-lang-button]').forEach((button) => {
+          button.addEventListener('click', () => {
+            const lang = button.getAttribute('data-lang-button');
+            localStorage.setItem(STORAGE_KEY, lang);
+            applyPageLanguage(lang);
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

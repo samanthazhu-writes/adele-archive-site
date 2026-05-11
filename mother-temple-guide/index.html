@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Adèle Archive: Mother Temple Visitor Guide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="top-nav">
+    <a href="#top" class="nav-brand">Mother Temple Guide</a>
+
+    <div class="nav-links">
+      <a href="#visitor-notice" data-i18n="nav.visit">Visit</a>
+      <a href="#temple-map" data-i18n="nav.map">Map</a>
+      <a href="#exhibitions" data-i18n="nav.exhibits">Exhibits</a>
+      <a href="#exit-prayer" data-i18n="nav.prayer">Prayer</a>
+    </div>
+
+    <div class="nav-controls">
+      <button id="langToggle" class="nav-toggle" type="button">LANG: CN</button>
+      <button id="navToggleNotes" class="nav-toggle" type="button">Archive: OFF</button>
+    </div>
+  </nav>
+
+  <button id="floatingToggle" class="floating-toggle" type="button">
+    Archive Notes: OFF
+  </button>
+
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="system-strip">
+        <span data-i18n="hero.system">MOTHER TEMPLE PUBLIC VISITOR SYSTEM</span>
+        <span data-i18n="hero.document">DOCUMENT ID: MT-VG-07</span>
+        <span data-i18n="hero.access">ACCESS LEVEL: PUBLIC</span>
+      </div>
+
+      <div class="temple-seal" aria-hidden="true">MT</div>
+
+      <p class="eyebrow" data-i18n="hero.eyebrow">THE ADÈLE ARCHIVE</p>
+      <h1 data-i18n="hero.title">阿黛勒档案：母神殿导览手册</h1>
+      <h2 data-i18n="hero.subtitle">Mother Temple Visitor Guide</h2>
+      <p class="edition" data-i18n="hero.edition">Public Guide Edition / Archive-Annotated Copy</p>
+
+      <p class="hero-text" data-i18n="hero.text">
+        欢迎进入母神殿公共参观系统。请依照推荐路线完成浏览。
+        参观过程中，请保持安静，请勿触碰展柜，请勿誊写、改写或传播未经认证的历史表述。
+        旧实验区暂不开放，请勿在封闭门外停留。
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#visitor-notice" class="btn primary" data-i18n="hero.start">Start Visit / 开始导览</a>
+        <button id="heroToggleNotes" class="btn" type="button">Show Archive Notes / 显示档案批注</button>
+        <button id="officialOnly" class="btn ghost" type="button" data-i18n="hero.officialOnly">
+          Official Guide Only / 仅浏览官方版本
+        </button>
+      </div>
+
+      <p class="tagline" data-i18n="hero.tagline">一份越读越可怕的圣地旅游手册。</p>
+
+      <a href="#visitor-notice" class="scroll-cue">
+        <span data-i18n="hero.scroll">Scroll to Begin / 开始参观</span>
+        <span>↓</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section two-column" id="visitor-notice">
+      <div class="section-heading">
+        <p class="section-number">01</p>
+        <h2 data-i18n="notice.heading">Visitor Notice / 参观须知</h2>
+      </div>
+
+      <article class="card official-card">
+        <p class="card-kicker" data-i18n="label.templeApproved">TEMPLE-APPROVED TEXT</p>
+        <h3 data-i18n="label.officialGuide">Official Guide / 官方导览</h3>
+        <p data-i18n="notice.official.p1">
+          为维护母神殿的神圣秩序与公共参观安全，请所有访客遵守以下规定：
+          请在圣母安息厅与十二子苏醒室内保持静默。
+          请勿触摸展柜、封存容器、复原装置或任何标注为限制接触的设施。
+        </p>
+        <p data-i18n="notice.official.p2">
+          未经授权，请勿在展区内录音、誊写祷词、复制展签或改写导览文本。
+          请勿向十二子影像提出私人问题。
+          请勿使用“强制”“实验”“约束”“不愿意”等未经认证的历史表述。
+        </p>
+        <p data-i18n="notice.official.p3">
+          若您在旧实验区附近听见异常声响、发现未标注通道，或看到残留编号，请立即离开该区域并通知工作人员。
+        </p>
+        <p class="card-code">PUBLIC NOTICE // MT-VISIT-01</p>
+      </article>
+
+      <article class="card archive-card" data-file="FILE MT-NOTICE-01">
+        <h3 data-i18n="label.archiveNotes">Archive Notes / 档案批注</h3>
+        <p data-i18n="notice.archive.p1">
+          现存早期版本的参观须知中，未发现“私人问题”“未经认证表述”与“异常声响”相关条款。
+          以上限制内容出现在母神殿开放后的第三次文本修订中。
+        </p>
+        <p data-i18n="notice.archive.p2">
+          内部访客系统记录显示，出口留言、停留时长、路径偏离与关键词均曾被纳入分析。
+          含有“阿黛勒”“不愿意”“谁决定的”等词汇的留言，会被系统标记为“不稳定反馈”。
+        </p>
+        <p data-i18n="notice.archive.p3">
+          “维护参观体验”在部分管理记录中对应：叙事校正、情绪安抚与低强度记忆干预。
+        </p>
+      </article>
+    </section>
+
+    <section class="section" id="reading-mode">
+      <div class="section-heading">
+        <p class="section-number">02</p>
+        <h2 data-i18n="reading.heading">Reading Mode / 阅读模式</h2>
+      </div>
+
+      <div id="archiveStatus" class="archive-status">
+        <span class="status-dot"></span>
+        <span class="status-text">OFFICIAL GUIDE MODE / 当前为官方导览模式</span>
+      </div>
+
+      <div class="mode-panel">
+        <div>
+          <h3 data-i18n="reading.official.title">Official Guide</h3>
+          <p data-i18n="reading.official.text">母神殿公开发布的参观文本，用于普通访客浏览、教育展示与纪念活动。</p>
+        </div>
+        <div>
+          <h3 data-i18n="reading.archive.title">Archive Notes</h3>
+          <p data-i18n="reading.archive.text">来源不明的档案批注，涉及建筑原始用途、术语修订记录、展品重命名与被删除的历史痕迹。</p>
+        </div>
+      </div>
+
+      <div class="mode-buttons">
+        <button class="btn ghost mode-off" type="button" data-i18n="reading.officialOnly">Official Only / 仅官方</button>
+        <button class="btn mode-on" type="button" data-i18n="reading.archiveOn">Archive Notes On / 开启批注</button>
+      </div>
+
+      <p class="quiet-note" data-i18n="reading.note">
+        请注意：官方文本不等于完整记录，档案批注也不构成最终结论。
+      </p>
+    </section>
+
+    <section class="section" id="temple-map">
+      <div class="section-heading">
+        <p class="section-number">03</p>
+        <h2 data-i18n="map.heading">Temple Map / 神殿导览地图</h2>
+      </div>
+
+      <p class="intro" data-i18n="map.intro">
+        母神殿推荐路线依照“最后恩典”的公共叙事顺序排列。
+        访客可按下列路径依次浏览各展区。
+      </p>
+
+      <nav class="temple-map">
+        <div class="map-group">
+          <p class="map-group-title" data-i18n="map.publicRoute">PUBLIC ROUTE / 公开路线</p>
+
+          <a href="#hall-rest"><strong>00</strong> <span data-i18n="map.entrance">Entrance Hall<br><span>入口大厅</span></span></a>
+          <a href="#hall-rest"><strong>01</strong> <span data-i18n="map.rest">Hall of Sacred Rest<br><span>圣母安息厅</span></span></a>
+          <a href="#twelve"><strong>02</strong> <span data-i18n="map.twelve">Chamber of the Twelve<br><span>十二子苏醒室</span></span></a>
+          <a href="#seedfire"><strong>03</strong> <span data-i18n="map.seedfire">Seedfire Containment<br><span>火种封存区</span></span></a>
+          <a href="#gospel"><strong>04</strong> <span data-i18n="map.gospel">First Gospel Draft<br><span>圣典初稿展柜</span></span></a>
+          <a href="#mother-chamber"><strong>05</strong> <span data-i18n="map.chamber">Chamber of the Mother<br><span>母神寝室复原区</span></span></a>
+          <a href="#relics"><strong>06</strong> <span data-i18n="map.relics">Relics of Adèle<br><span>阿黛勒遗物展</span></span></a>
+        </div>
+
+        <div class="map-group">
+          <p class="map-group-title restricted-title" data-i18n="map.restrictedNode">RESTRICTED NODE / 限制区域</p>
+          <a href="#restricted" class="restricted-node"><strong>07</strong> <span data-i18n="map.restricted">ACCESS LIMITED<br><span>禁止进入的旧实验区</span></span></a>
+        </div>
+
+        <div class="map-group">
+          <p class="map-group-title" data-i18n="map.exitRoute">EXIT ROUTE / 离场路线</p>
+          <a href="#gift-shop"><strong>08</strong> <span data-i18n="map.shop">Gift Shop of Grace<br><span>纪念品商店</span></span></a>
+          <a href="#exit-prayer"><strong>09</strong> <span data-i18n="map.prayer">Exit Prayer Station<br><span>出口祷告区</span></span></a>
+        </div>
+      </nav>
+    </section>
+
+    <section class="section" id="vocabulary">
+      <div class="section-heading">
+        <p class="section-number">04</p>
+        <h2 data-i18n="vocab.heading">Temple-Approved Vocabulary / 神殿推荐术语表</h2>
+      </div>
+
+      <p class="intro" data-i18n="vocab.intro">
+        为维护历史表述一致性，并避免未经认证的解释造成情绪误读，
+        母神殿建议所有访客、讲解员与教育机构使用以下术语。
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th data-i18n="vocab.table.bad">不推荐用语</th>
+              <th data-i18n="vocab.table.good">推荐用语</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td data-i18n="vocab.death.bad">死亡</td><td data-i18n="vocab.death.good">安息</td></tr>
+            <tr><td data-i18n="vocab.restraint.bad">约束</td><td data-i18n="vocab.restraint.good">保护</td></tr>
+            <tr><td data-i18n="vocab.pain.bad">疼痛</td><td data-i18n="vocab.pain.good">奉献</td></tr>
+            <tr><td data-i18n="vocab.refusal.bad">拒绝</td><td data-i18n="vocab.refusal.good">情绪波动</td></tr>
+            <tr><td data-i18n="vocab.subject.bad">实验体</td><td data-i18n="vocab.subject.good">孩子</td></tr>
+            <tr><td data-i18n="vocab.life.bad">生命维持系统</td><td data-i18n="vocab.life.good">圣体延续装置</td></tr>
+            <tr><td data-i18n="vocab.incubator.bad">孵化槽</td><td data-i18n="vocab.incubator.good">苏醒圣龛</td></tr>
+            <tr><td data-i18n="vocab.seedfire.bad">火种污染</td><td data-i18n="vocab.seedfire.good">恩典试炼</td></tr>
+            <tr><td data-i18n="vocab.unwilling.bad">不愿意</td><td data-i18n="vocab.unwilling.good">尚未理解恩典</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <article class="card archive-card full" data-file="FILE MT-VOCAB-03">
+        <h3 data-i18n="label.archiveNotes">Archive Notes / 档案批注</h3>
+        <p data-i18n="vocab.archive.p1">该术语表最初并非面向普通访客，而是用于讲解员、档案管理员与圣典誊写者培训。</p>
+        <p data-i18n="vocab.archive.p2">术语替换改变了事件责任归属。“疼痛”被归入“奉献”，“约束”被归入“保护”，“拒绝”被归入“情绪波动”。</p>
+        <p data-i18n="vocab.archive.p3">该表格不只规范语言，也规范了可被公开承认的事实范围。</p>
+      </article>
+    </section>
+
+    <section class="section" id="exhibitions">
+      <div class="section-heading">
+        <p class="section-number">05</p>
+        <h2 data-i18n="exhibits.heading">Exhibition Sections / 主展区</h2>
+      </div>
+
+      <article class="exhibit" id="hall-rest">
+        <div class="exhibit-title">
+          <p>01</p>
+          <h3 data-i18n="rest.title.cn">圣母安息厅</h3>
+          <h4 data-i18n="rest.title.en">Hall of Sacred Rest</h4>
+        </div>
+
+        <div class="exhibit-grid">
+          <div class="card official-card">
+            <p class="card-kicker" data-i18n="label.templeApproved">TEMPLE-APPROVED TEXT</p>
+            <h3 data-i18n="label.officialGuide">Official Guide / 官方导览</h3>
+            <p data-i18n="rest.official.p1">圣母安息厅是母神殿的核心纪念空间。据认证圣典记载，圣母阿黛勒在此完成最后恩典，并将自身的温度、呼吸与沉默交还给十二子，使其进入稳定苏醒阶段。</p>
+            <p data-i18n="rest.official.p2">中央白石台为后期礼仪复原设施，用于标示圣母安息时的象征方位。请访客在本厅内保持静默，并依照地面指引完成环形参观。</p>
+            <p data-i18n="rest.official.p3">母神殿提醒您：圣母并未离去。她以被纪念、被继承与被共同维护的形式继续存在。</p>
+            <p class="card-code">EXHIBIT TEXT // HSR-01</p>
+          </div>
+
+          <div class="card archive-card" data-file="FILE MT-REST-04">
+            <h3 data-i18n="label.archiveNotes">Archive Notes / 档案批注</h3>
+            <p data-i18n="rest.archive.p1">原始结构图显示，该区域最早标注为“生命维持约束区”。现有白石台并非原始设施，其下方仍保留接口槽、固定环痕迹、管线入口与体征同步端口。</p>
+            <p data-i18n="rest.archive.p2">早期记录未使用“安息”一词。对应表述包括：“生理活动终止”“系统接入失败”与“主体生命指标不可逆下降”。</p>
+            <p data-i18n="rest.archive.p3">“最后姿态复原”参考的是圣典插图，而非完整现场记录。</p>
+          </div>
+        </div>
+
+        <ul class="exhibit-list">
+          <li data-i18n="rest.item.1">中央白石安息台</li>
+          <li data-i18n="rest.item.2">圣母体温复原图</li>
+          <li data-i18n="rest.item.3">第七版安息仪式祷词</li>
+          <li data-i18n="rest.item.4">安息厅穹顶星图</li>
+        </ul>
+
+        <p class="unstable" data-i18n="rest.unstable">她不是躺在这里。她是被留在这里。</p>
+      </article>
+
+      <article class="exhibit" id="twelve">
+        <div class="exhibit-title">
+          <p>02</p>
+          <h3 data-i18n="twelve.title.cn">十二子苏醒室</h3>
+          <h4 data-i18n="twelve.title.en">Chamber of the Twelve</h4>
+        </div>
+
+        <div class="exhibit-grid">
+          <div class="card official-card">
+            <p class="card-kicker" data-i18n="label.templeApproved">TEMPLE-APPROVED TEXT</p>
+            <h3 data-i18n="label.officialGuide">Official Guide / 官方导览</h3>
+            <p data-i18n="twelve.official.p1">十二子苏醒室记录了文明新晨的第一阶段。根据神殿认证叙事，十二名孩子在圣母完成安息后依次苏醒，并由此开启后圣母时代的公共生命秩序。</p>
+            <p data-i18n="twelve.official.p2">每一座苏醒圣龛对应一名孩子，每一道光环用于标示其苏醒顺序与纪念编号。为维护展区秩序，请勿呼唤未经认证的私人姓名。</p>
+            <p data-i18n="twelve.official.p3">本展区为静默参观区域。请勿向影像、投影或互动装置提出私人问题。</p>
+            <p class="card-code">EXHIBIT TEXT // CTT-02</p>
+          </div>
+
+          <div class="card archive-card" data-file="FILE MT-TWELVE-05">
+            <h3 data-i18n="label.archiveNotes">Archive Notes / 档案批注</h3>
+            <p data-i18n="twelve.archive.p1">早期技术日志将本区称为“孵化槽列阵”。“苏醒圣龛”一词为后期公共展陈替换用语。</p>
+            <p data-i18n="twelve.archive.p2">原始设备记录显示，十二个槽位属于人工孵化与生命稳定系统。第十二槽曾出现非同步反应，系统标记包括：“异常”“不稳定”“拒绝同步”“需隔离观察”。</p>
+            <p data-i18n="twelve.archive.p3">关于孩子们是否保留苏醒前记忆的研究，在神殿建立后被终止。</p>
+          </div>
+        </div>
+
+        <ul class="exhibit-list">
+          <li data-i18n="twelve.item.1">十二座苏醒圣龛</li>
+          <li data-i18n="twelve.item.2">苏醒顺序光环图</li>
+          <li data-i18n="twelve.item.3">第十二槽残损编号</li>
+          <li data-i18n="twelve.item.4">首次呼吸记录</li>
+        </ul>
+
+        <p class="unstable" data-i18n="twelve.unstable">请勿询问孩子们是否曾同意成为证据。</p>
+      </article>
+
+      <article class="exhibit" id="seedfire">
+        <div class="exhibit-title">
+          <p>03</p>
+          <h3 data-i18n="seedfire.title.cn">火种封存区</h3>
+          <h4 data-i18n="seedfire.title.en">Seedfire Containment Gallery</h4>
+        </div>
+
+        <div class="exhibit-grid">
+          <div class="card official-card">
+            <p class="card-kicker" data-i18n="label.templeApproved">TEMPLE-APPROVED TEXT</p>
+            <h3 data-i18n="label.officialGuide">Official Guide / 官方导览</h3>
+            <p data-i18n="seedfire.official.p1">火种封存区为母神殿安全等级最高的公开展区。根据神殿说明，火种是圣母留给文明的最后试炼，曾引发偏离、混乱与不可预测的意志波动。</p>
+            <p data-i18n="seedfire.official.p2">中央展柜中陈列的是最后一管火种的复原模型。真实样本不对公众开放，并由圣典委员会、安全部与技术保存组共同监管。</p>
+            <p data-i18n="seedfire.official.p3">为确保参观安全，请勿靠近封存柜，请勿将手掌贴于玻璃表面，请勿尝试与展柜进行接触性互动。</p>
+            <p class="card-code">EXHIBIT TEXT // SFG-03</p>
+          </div>
+
+          <div class="card archive-card" data-file="FILE MT-SEEDFIRE-06">
+            <h3 data-i18n="label.archiveNotes">Archive Notes / 档案批注</h3>
+            <p data-i18n="seedfire.archive.p1">“污染”一词最早出现于母神殿安全部报告。目前可见的阿黛勒笔记中，未发现她以该词描述 Seedfire。</p>
+            <p data-i18n="seedfire.archive.p2">残存笔记显示，她曾将 Seedfire 记录为一种“被保留下来的拒绝能力”。后续公开导览均删去了“拒绝”相关表述。</p>
+            <p data-i18n="seedfire.archive.p3">火种机制可能涉及意志、自我命名、非服从行为与叙事断裂。神殿将其定义为危险物，但该定义未必来自原始研究者本人。</p>
+          </div>
+        </div>
+
+        <ul class="exhibit-list">
+          <li data-i18n="seedfire.item.1">火种封存柜</li>
+          <li data-i18n="seedfire.item.2">最后一管 Seedfire 复制模型</li>
+          <li data-i18n="seedfire.item.3">安全部污染等级牌</li>
+          <li data-i18n="seedfire.item.4">火种扩散路线图</li>
+        </ul>
+
+        <p class="unstable" data-i18n="seedfire.unstable">如果服从是一种病，火种是什么？</p>
+      </article>
+
+      <article class="exhibit" id="gospel">
+        <div class="exhibit-title">
+          <p>04</p>
+          <h3 data-i18n="gospel.title.cn">圣典初稿展柜</h3>
+          <h4 data-i18n="gospel.title.en">First Gospel Draft Display</h4>
+        </div>
+
+        <div class="exhibit-grid">
+          <div class="card official-card">
+            <p class="card-kicker" data-i18n="label.templeApproved">TEMPLE-APPROVED TEXT</p>
+            <h3 data-i18n="label.officialGuide">Official Guide / 官方导览</h3>
+            <p data-i18n="gospel.official.p1">本展柜保存了《母神圣典》的早期草稿与修订版本。这些文本记录了圣母之言如何经过誊写、整理、祷告与校订，最终成为文明共同语言。</p>
+            <p data-i18n="gospel.official.p2">每一道修订痕迹都体现了后世对恩典叙事的持续完善。神殿认为，修订并非对原文的背离，而是对圣母慈悲更准确、更庄严的理解。</p>
+            <p data-i18n="gospel.official.p3">请勿在本展区进行未经授权的文本比对、摘录或再解释。</p>
+            <p class="card-code">EXHIBIT TEXT // FGD-04</p>
+          </div>
+
+          <div class="card archive-card" data-file="FILE MT-GOSPEL-07">
+            <h3 data-i18n="label.archiveNotes">Archive Notes / 档案批注</h3>
+            <p data-i18n="gospel.archive.p1">多处修订显示，阿黛勒的第一人称语句被改为第三人称神圣叙述。</p>
+            <p data-i18n="gospel.archive.p2">“我不愿意”被改为“圣母愿承众苦”。“不要再记录我”被改为“圣母进入慈悲静默”。“这不是爱”被改为“圣母以凡人无法理解的方式继续爱着我们”。</p>
+            <p data-i18n="gospel.archive.p3">“实验记录”被替换为“圣言初稿”。该替换改变了文本的来源属性，也改变了读者对责任主体的判断。</p>
+          </div>
+        </div>
+
+        <ul class="exhibit-list">
+          <li data-i18n="gospel.item.1">《母神圣典》第一版草稿</li>
+          <li data-i18n="gospel.item.2">红色修订笔迹</li>
+          <li data-i18n="gospel.item.3">术语替换表原件</li>
+          <li data-i18n="gospel.item.4">被撕下的原始语句残片</li>
+        </ul>
+
+        <p class="unstable" data-i18n="gospel.unstable">她说话。他们修订。后人祈祷。</p>
+      </article>
+
+      <article class="exhibit" id="mother-chamber">
+        <div class="exhibit-title">
+          <p>05</p>
+          <h3 data-i18n="chamber.title.cn">母神寝室复原区</h3>
+          <h4 data-i18n="chamber.title.en">Reconstructed Chamber of the Mother</h4>
+        </div>
+
+        <div class="exhibit-grid">
+          <div class="card official-card">
+            <p class="card-kicker" data-i18n="label.templeApproved">TEMPLE-APPROVED TEXT</p>
+            <h3 data-i18n="label.officialGuide">Official Guide / 官方导览</h3>
+            <p data-i18n="chamber.official.p1">母神寝室复原区呈现圣母生前短暂停歇的生活空间。本区根据遗物清单、圣典旁注与后世纪念图像重建，用于帮助访客理解圣母在日常层面的温柔与承担。</p>
+            <p data-i18n="chamber.official.p2">展区内陈列有窄床、水杯、织物、便签与睡眠相关记录的复原件。这些物品共同构成圣母继续履行职责前的安宁片刻。</p>
+            <p data-i18n="chamber.official.p3">请勿触摸床沿、织物或桌面物品。请勿将本区称为未经认证的私人房间。</p>
+            <p class="card-code">EXHIBIT TEXT // RCM-05</p>
+          </div>
+
+          <div class="card archive-card" data-file="FILE MT-CHAMBER-08">
+            <h3 data-i18n="label.archiveNotes">Archive Notes / 档案批注</h3>
+            <p data-i18n="chamber.archive.p1">原始清单显示，此处并非普通寝室，而是生活监测单元。饮水、睡眠、体温、梦话、药物摄入、书写行为与情绪波动均被记录。</p>
+            <p data-i18n="chamber.archive.p2">房间中至少存在三处监控点。多份记录显示，阿黛勒长期处于睡眠不足、疼痛管理不足与持续观察状态。</p>
+            <p data-i18n="chamber.archive.p3">桌面便签“remember to eat lunch”不应被解释为神学文本。它更可能是一条日常自我提醒。</p>
+          </div>
+        </div>
+
+        <ul class="exhibit-list">
+          <li data-i18n="chamber.item.1">窄床复原装置</li>
+          <li data-i18n="chamber.item.2">未喝完的水杯</li>
+          <li data-i18n="chamber.item.3">旧毯子</li>
+          <li data-i18n="chamber.item.4">“remember to eat lunch”便签</li>
+          <li data-i18n="chamber.item.5">睡眠监测表</li>
+        </ul>
+
+        <p class="unstable" data-i18n="chamber.unstable">她不是圣像。她只是很久没有睡好。</p>
+      </article>
+
+      <article class="exhibit" id="relics">
+        <div class="exhibit-title">
+          <p>06</p>
+          <h3 data-i18n="relics.title.cn">阿黛勒遗物展</h3>
+          <h4 data-i18n="relics.title.en">Relics of Adèle</h4>
+        </div>
+
+        <div class="exhibit-grid">
+          <div class="card official-card">
+            <p class="card-kicker" data-i18n="label.templeApproved">TEMPLE-APPROVED TEXT</p>
+            <h3 data-i18n="label.officialGuide">Official Guide / 官方导览</h3>
+            <p data-i18n="relics.official.p1">阿黛勒遗物展陈列圣母生前使用、接触或被认为与其恩典相关的珍贵圣物。每一件展品都见证了她对文明的爱、对十二子的慈悲，以及对未来的无私承担。</p>
+            <p data-i18n="relics.official.p2">神殿以永久保存的方式维护这些圣物，并通过编号、封存、修复与公共展示，使其从私人遗存转化为文明共同记忆。</p>
+            <p data-i18n="relics.official.p3">请勿触摸展柜。请勿对展品进行未经授权的私人解释、重新命名或情绪化归属。</p>
+            <p class="card-code">EXHIBIT TEXT // ROA-06</p>
+          </div>
+
+          <div class="card archive-card" data-file="FILE MT-RELIC-09">
+            <h3 data-i18n="label.archiveNotes">Archive Notes / 档案批注</h3>
+            <p data-i18n="relics.archive.p1">早期遗物整理记录缺失。目前无法确认哪些物品被保存、哪些被移交、哪些被销毁，哪些在进入展柜前经过重新命名。</p>
+            <p data-i18n="relics.archive.p2">部分展品可能曾作为证据、生活用品、研究材料或儿童物品存在，而非“圣物”。</p>
+            <p data-i18n="relics.archive.p3">“止痛药盒”被解释为圣母承担痛苦的象征，也可能是疼痛管理失败的证据。“Noah 的儿童画”首先属于一个孩子，不属于神殿叙事。</p>
+          </div>
+        </div>
+
+        <ul class="exhibit-list">
+          <li data-i18n="relics.item.1">烧毁的实验笔记</li>
+          <li data-i18n="relics.item.2">Noah 的儿童画</li>
+          <li data-i18n="relics.item.3">给 Messiah 的未寄出信</li>
+          <li data-i18n="relics.item.4">止痛药盒</li>
+          <li data-i18n="relics.item.5">旧毯子</li>
+        </ul>
+
+        <p class="unstable" data-i18n="relics.unstable">保存她，是否也是再次拥有她？</p>
+      </article>
+
+      <article class="exhibit restricted-exhibit" id="restricted">
+        <div class="restricted-label" data-i18n="restricted.label">ACCESS LIMITED / RESTRICTED AREA</div>
+
+        <div class="restricted-meta-grid">
+          <div>
+            <span data-i18n="restricted.meta.status.label">FILE STATUS</span>
+            <strong data-i18n="restricted.meta.status.value">PARTIALLY CORRUPTED</strong>
+          </div>
+          <div>
+            <span data-i18n="restricted.meta.audio.label">AUDIO</span>
+            <strong data-i18n="restricted.meta.audio.value">UNAVAILABLE</strong>
+          </div>
+          <div>
+            <span data-i18n="restricted.meta.original.label">ORIGINAL LABEL</span>
+            <strong>Dr. Adele Spet</strong>
+          </div>
+        </div>
+
+        <div class="exhibit-title">
+          <p>07</p>
+          <h3 data-i18n="restricted.title.cn">禁止进入的旧实验区</h3>
+          <h4 data-i18n="restricted.title.en">Restricted Former Laboratory</h4>
+        </div>
+
+        <div class="restricted-content">
+          <div>
+            <p class="card-kicker dark" data-i18n="label.templeApproved">TEMPLE-APPROVED TEXT</p>
+            <h3 data-i18n="label.officialGuide">Official Guide / 官方导览</h3>
+            <p data-i18n="restricted.official.p1">旧实验区因结构老化、系统不稳定与安全维护需求，暂不对公众开放。本区域不属于母神殿推荐参观路线，也不构成现行圣母安息叙事的必要组成部分。</p>
+            <p data-i18n="restricted.official.p2">为保障参观安全，请勿靠近封闭门、扫描锁、维修通道或地下楼梯。若您误入旧实验区周边，请保持冷静，并沿最近的公共路线返回主展区。</p>
+            <p data-i18n="restricted.official.p3">请勿阅读墙面残留标记。请勿记录未认证编号。请勿回应门后声音。</p>
+          </div>
+
+          <div class="archive-card restricted-note" data-file="FILE MT-LAB-10">
+            <h3 data-i18n="label.archiveNotes">Archive Notes / 档案批注</h3>
+            <p data-i18n="restricted.archive.p1">旧实验区是母神殿最早的空间核心之一。建筑下层仍保留实验台、人工孵化设备、旧式培养皿、封存管线与生命维持系统接口。</p>
+            <p data-i18n="restricted.archive.p2">早期平面图显示，现行圣所可能由实验室、孵化中心、生命维持区与档案控制室逐步改造而成。</p>
+            <p data-i18n="restricted.archive.p3">“不构成现行圣母安息叙事的必要组成部分”并不等于“与阿黛勒无关”。</p>
+          </div>
+        </div>
+
+        <div class="access-denied" aria-hidden="true" data-i18n="restricted.denied">ACCESS DENIED</div>
+
+        <ul class="exhibit-list restricted-list">
+          <li data-i18n="restricted.item.1">门禁图标</li>
+          <li data-i18n="restricted.item.2">被涂黑的平面图</li>
+          <li data-i18n="restricted.item.3">无法播放的音频文件</li>
+          <li>ACCESS DENIED</li>
+          <li>Dr. Adele Spet</li>
+        </ul>
+
+        <p class="unstable" data-i18n="restricted.unstable">如果这里与圣母无关，为什么所有门都通向这里？</p>
+      </article>
+    </section>
+
+    <section class="section" id="gift-shop">
+      <div class="section-heading">
+        <p class="section-number">06</p>
+        <h2 data-i18n="shop.heading">Gift Shop of Grace / 纪念品商店</h2>
+      </div>
+
+      <p class="intro" data-i18n="shop.intro">
+        感谢您完成母神殿公共参观路线。
+        访客可在纪念品商店选购经神殿认证的纪念物，将圣母的慈悲、秩序与安宁带回日常生活。
+      </p>
+
+      <div class="gift-grid">
+  <div class="gift-card">
+    <strong data-i18n="shop.item.1.name">圣母祷告卡</strong>
+    <p class="gift-slogan" data-i18n="shop.item.1.slogan">
+      把无法说出口的感谢，交给已经替您写好的句子。
+    </p>
+    <span data-i18n="shop.item.1.category">Category: Devotional Print</span>
+    <span data-i18n="shop.status.certified">Status: Temple Certified</span>
+    <span>Item ID: GS-PC-01</span>
+    <span class="gift-price" data-i18n="shop.item.1.price">¥18 / £2.00</span>
+  </div>
+
+  <div class="gift-card">
+    <strong data-i18n="shop.item.2.name">十二子纪念徽章</strong>
+    <p class="gift-slogan" data-i18n="shop.item.2.slogan">
+      每一枚编号，都证明有人替他们记住了出生顺序。
+    </p>
+    <span data-i18n="shop.item.2.category">Category: Commemorative Pin</span>
+    <span data-i18n="shop.status.certified">Status: Temple Certified</span>
+    <span>Item ID: GS-TC-02</span>
+    <span class="gift-price" data-i18n="shop.item.2.price">¥36 / £4.00</span>
+  </div>
+
+  <div class="gift-card">
+    <strong data-i18n="shop.item.3.name">火种玻璃吊坠</strong>
+    <p class="gift-slogan" data-i18n="shop.item.3.slogan">
+      安全佩戴一份被定义为危险的自由。
+    </p>
+    <span data-i18n="shop.item.3.category">Category: Containment Replica</span>
+    <span data-i18n="shop.status.certified">Status: Temple Certified</span>
+    <span>Item ID: GS-SF-03</span>
+    <span class="gift-price" data-i18n="shop.item.3.price">¥68 / £7.50</span>
+  </div>
+
+  <div class="gift-card">
+    <strong data-i18n="shop.item.4.name">Mother’s Mercy 香薰</strong>
+    <p class="gift-slogan" data-i18n="shop.item.4.slogan">
+      适用于睡眠、净化、顺从，以及低抵抗感的夜晚。
+    </p>
+    <span data-i18n="shop.item.4.category">Category: Home Fragrance</span>
+    <span data-i18n="shop.status.soldOut">Status: Sold Out</span>
+    <span>Item ID: GS-MM-04</span>
+    <span class="gift-price sold-out-price" data-i18n="shop.item.4.price">¥128 / £14.00</span>
+  </div>
+
+  <div class="gift-card">
+    <strong data-i18n="shop.item.5.name">圣典摘录明信片</strong>
+    <p class="gift-slogan" data-i18n="shop.item.5.slogan">
+      经过七次修订，因此更接近真相。
+    </p>
+    <span data-i18n="shop.item.5.category">Category: Gospel Excerpt</span>
+    <span data-i18n="shop.status.certified">Status: Temple Certified</span>
+    <span>Item ID: GS-GE-05</span>
+    <span class="gift-price" data-i18n="shop.item.5.price">¥12 / £1.50</span>
+  </div>
+
+  <div class="gift-card">
+    <strong data-i18n="shop.item.6.name">“She Gave Herself”帆布袋</strong>
+    <p class="gift-slogan" data-i18n="shop.item.6.slogan">
+      足够结实，可承载未经本人确认的牺牲。
+    </p>
+    <span data-i18n="shop.item.6.category">Category: Visitor Merchandise</span>
+    <span data-i18n="shop.status.certified">Status: Temple Certified</span>
+    <span>Item ID: GS-SGH-06</span>
+    <span class="gift-price" data-i18n="shop.item.6.price">¥88 / £9.50</span>
+  </div>
+</div>
+
+      <article class="card archive-card full" data-file="FILE MT-SHOP-11">
+        <h3 data-i18n="label.archiveNotes">Archive Notes / 档案批注</h3>
+        <p data-i18n="shop.archive.p1">商品化记录显示，第一批纪念品上线时间早于正式死因报告公开时间。</p>
+        <p data-i18n="shop.archive.p2">“She Gave Herself”标语最早出现在内部传播测试稿中。目前未发现证据表明该句来自阿黛勒本人。</p>
+        <p data-i18n="shop.archive.p3">“Mother’s Mercy”香薰配方说明中曾出现“安眠”“洁净”“低抵抗感”等营销词。其命名时间与母神寝室复原区开放时间相近。</p>
+      </article>
+
+      <p class="unstable" data-i18n="shop.unstable">如果一切都属于她，为什么付款码属于神殿？</p>
+    </section>
+
+    <section class="section" id="exit-prayer">
+      <div class="section-heading">
+        <p class="section-number">07</p>
+        <h2 data-i18n="prayer.heading">Exit Prayer Station / 出口祷告区</h2>
+      </div>
+
+      <p class="intro" data-i18n="prayer.intro">
+        您即将离开母神殿。离场前，您可以在出口祷告区写下一句献给圣母的话。
+        您的留言将进入神殿公共祝祷数据库，并可能在未来展览中匿名展示。
+      </p>
+
+      <blockquote class="prayer-line" data-i18n="prayer.line">
+        “圣母阿黛勒，感谢您为我们……”
+      </blockquote>
+
+      <form id="prayerForm" class="prayer-form">
+        <textarea id="prayerInput" data-i18n-placeholder="prayer.placeholder" placeholder="请写下您愿意留在档案中的一句话。"></textarea>
+        <button class="btn primary" type="submit" data-i18n="prayer.submit">Submit Prayer / 提交祷告</button>
+      </form>
+
+      <div id="prayerResult" class="submit-result hidden"></div>
+
+      <article class="card archive-card full" data-file="FILE MT-PRAYER-12">
+        <h3 data-i18n="label.archiveNotes">Archive Notes / 档案批注</h3>
+        <p data-i18n="prayer.archive.p1">早期出口系统收集访客留言，用于监测公众对母神叙事的接受程度。留言内容、提交时间、路径偏离情况与关键词均可被关联记录。</p>
+        <p data-i18n="prayer.archive.p2">含有“阿黛勒”“不愿意”“约束”“谁决定的”“她不是神”“她是人”等词汇的留言曾被自动隐藏。部分留言未删除，而是转入“叙事风险样本库”。</p>
+        <p data-i18n="prayer.archive.p3">“愿圣母记得您”并非原始反馈语。早期版本为：“您的信息已被记录。”</p>
+      </article>
+
+      <p class="unstable" data-i18n="prayer.unstable">你写下的不是祷告，是下一份档案。</p>
+    </section>
+</main>
+
+
+  <footer class="footer">
+  <div class="footer-inner">
+    <div class="creator-card">
+      <p class="footer-name">Samantha Zhu</p>
+      <p class="creator-title" data-i18n="footer.title">
+        Writer / Interactive Narrative Designer
+      </p>
+
+      <p class="creator-bio" data-i18n="footer.bio">
+        Samantha Zhu is a writer and interactive narrative designer developing low-pressure,
+        document-driven experiences influenced by Jubensha, immersive theatre, archive fiction,
+        Gothic imagination, and feminist speculative fiction.
+      </p>
+
+      <div class="creator-links">
+        <a href="mailto:samantha201223@163.com" data-i18n="footer.email">
+          Email: samantha201223@163.com
+        </a>
+        <a href="https://samanthazhu-writes.github.io/" target="_blank" rel="noopener noreferrer" data-i18n="footer.website">
+          Portfolio: samanthazhu-writes.github.io
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <p data-i18n="footer.note.p1">
+        This page is a public worldbuilding sample for
+        <em>She Was Not a Goddess: The Adèle Archive</em>.
+      </p>
+      <p data-i18n="footer.note.p2">
+        It is not a full script release, player material, facilitator manual, or complete ending structure.
+        A short sample kit may be prepared for development or publishing conversations.
+      </p>
+      <p data-i18n="footer.note.p3">
+        本页面为《She Was Not a Goddess: The Adèle Archive》的公开世界观样本。
+        不包含完整剧本、玩家材料、主持手册或完整结局结构。
+      </p>
+    </div>
+
+    <button id="hiddenEnding" class="hidden-ending" type="button" data-i18n="footer.hidden">
+      请勿在导览结束后继续称呼她为阿黛勒。
+    </button>
+    <p id="hiddenReveal" class="hidden-reveal hidden" data-i18n="footer.reveal">她会听见。</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

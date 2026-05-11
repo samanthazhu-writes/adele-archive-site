@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>The Adèle Archive — Private Reading Dossier</title>
+  <meta
+    name="description"
+    content="A private reading portal for selected development materials from The Adèle Archive."
+  />
+
+  <!-- Optional: prevent this private review page from being indexed casually. -->
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Fonts: safe fallbacks are handled in CSS. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="js/lang.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- =========================================================
+       SITE HEADER / NAVIGATION
+       ========================================================= -->
+  <header class="site-header" id="site-header">
+  <div class="site-header__inner container">
+    <a class="site-brand" href="index.html#start" aria-label="The Adèle Archive Home">
+      <span class="site-brand__mark">A</span>
+      <span class="site-brand__text" data-i18n="nav.brand">THE ADÈLE ARCHIVE</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html#start" class="site-nav__link" data-i18n="nav.start">Start Here</a>
+      <a href="main-project.html" class="site-nav__link" data-i18n="projects.mainProject.shortTitle">Main Project</a>
+      <a href="index.html#reading-path" class="site-nav__link" data-i18n="nav.path">Reading Path</a>
+      <a href="index.html#projects" class="site-nav__link" data-i18n="nav.projects">Projects</a>
+      <a href="index.html#digital-archive" class="site-nav__link" data-i18n="nav.digitalArchive">Digital Archive</a>
+      <a href="contact.html" class="site-nav__link" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" aria-label="Reading language">
+        <span class="lang-switch__label" data-i18n="meta.languageLabel">Reading Language</span>
+        <button class="lang-switch__button is-active" type="button" data-lang-button="en" aria-pressed="true">EN</button>
+        <button class="lang-switch__button" type="button" data-lang-button="zh" aria-pressed="false">中文</button>
+      </div>
+
+      <button class="mobile-menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" data-action="toggle-menu">
+        <span data-i18n="nav.menu">Menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+      <a href="index.html#start" class="mobile-menu__link" data-i18n="nav.start">Start Here</a>
+      <a href="main-project.html" class="mobile-menu__link" data-i18n="projects.mainProject.shortTitle">Main Project</a>
+      <a href="index.html#reading-path" class="mobile-menu__link" data-i18n="nav.path">Reading Path</a>
+      <a href="index.html#projects" class="mobile-menu__link" data-i18n="nav.projects">Projects</a>
+      <a href="index.html#digital-archive" class="mobile-menu__link" data-i18n="nav.digitalArchive">Digital Archive</a>
+      <a href="contact.html" class="mobile-menu__link" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="mobile-menu__lang">
+      <span class="mobile-menu__lang-label" data-i18n="meta.languageLabel">Reading Language</span>
+      <button type="button" data-lang-button="en">EN</button>
+      <button type="button" data-lang-button="zh">中文</button>
+    </div>
+  </div>
+</header>
+
+  <main id="main-content">
+    <!-- =========================================================
+         01. ACCESS GATE / PRIVATE READING ENTRY
+         ========================================================= -->
+    <section class="section access-section" id="start" aria-labelledby="access-title">
+      <div class="container">
+        <div class="access-card">
+          <div class="access-card__content">
+            <p class="eyebrow" data-i18n="home.access.eyebrow">PRIVATE READING DOSSIER</p>
+            <h1 class="access-card__title" id="access-title" data-i18n="home.access.title">
+              Selected materials for invited review
+            </h1>
+
+            <div
+              class="access-card__body prose"
+              data-render-list="home.access.body"
+            ></div>
+
+            <div class="button-group access-card__actions">
+              <a class="button button-primary" href="#hero" data-i18n="buttons.enter">
+                Enter Reading Page
+              </a>
+              <a class="button button-secondary" href="#content-note" data-i18n="buttons.viewContentNote">
+                View Content Note
+              </a>
+              <a class="button button-secondary" href="main-project.html" data-i18n="buttons.startMainProject">
+                Start with Main Project
+              </a>
+            </div>
+          </div>
+
+          <aside class="access-card__aside" aria-label="Archive access note">
+            <div class="archive-stamp">
+              <span class="archive-stamp__label" data-i18n="common.privateReviewOnly">
+                For private review only.
+              </span>
+              <span class="archive-stamp__code">ACCESS / SELECTED MATERIALS</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         02. HERO
+         ========================================================= -->
+    <section class="section hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="home.hero.eyebrow">THE ADÈLE ARCHIVE</p>
+          <h2 class="hero-title" id="hero-title" data-i18n="home.hero.title">
+            Private Reading Dossier
+          </h2>
+          <p class="hero-subtitle" data-i18n="home.hero.subtitle">
+            A modular archive-fiction narrative world about a female scientist transformed after death into a Mother Goddess by the civilisation that used her body, research, language, and memory.
+          </p>
+        </div>
+
+        <aside class="hero-panel" aria-label="Core archive question">
+          <p class="hero-panel__label">ARCHIVE QUESTION</p>
+          <blockquote class="hero-question" data-i18n="home.hero.question">
+            Who has the right to speak for Adèle?
+          </blockquote>
+
+          <div class="tag-list hero-tags" data-render-tags="home.hero.tags"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         03. CONTENT NOTE
+         ========================================================= -->
+    <section class="section content-note-section" id="content-note" aria-labelledby="content-note-title">
+      <div class="container">
+        <article class="content-note">
+          <div class="section-header">
+            <p class="eyebrow" data-i18n="home.contentNote.eyebrow">CONTENT NOTE</p>
+            <h2 class="section-title" id="content-note-title" data-i18n="home.contentNote.title">
+              Reading Notice
+            </h2>
+          </div>
+
+          <div class="content-note__short prose" data-render-list="home.contentNote.short"></div>
+
+          <div class="content-note__tags">
+            <span class="tag" data-i18n="risk.fictionalSystemLanguage">
+              Fictional institutional language appears as part of the system being critiqued.
+            </span>
+            <span class="tag" data-i18n="risk.noRomanticSuffering">
+              The project does not romanticise suffering or sacrifice.
+            </span>
+            <span class="tag" data-i18n="risk.religionNote">
+              Fictional religious language is used to examine myth-making.
+            </span>
+          </div>
+
+          <button
+            class="button button-secondary content-note__toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="content-note-full"
+            data-action="toggle-content-note"
+          >
+            <span data-i18n="buttons.viewContentNote">View Content Note</span>
+          </button>
+
+          <div class="content-note__full" id="content-note-full" hidden>
+            <h3 class="content-note__full-title" data-i18n="home.contentNote.fullTitle">
+              Full Content Note
+            </h3>
+            <div class="prose" data-render-list="home.contentNote.full"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         04. WORLD OVERVIEW
+         ========================================================= -->
+    <section class="section world-section" id="world" aria-labelledby="world-title">
+      <div class="container world-grid">
+        <div class="section-copy">
+          <div class="section-header">
+            <p class="eyebrow" data-i18n="home.world.eyebrow">WORLD OVERVIEW</p>
+            <h2 class="section-title" id="world-title" data-i18n="home.world.title">
+              A modular archive-fiction world
+            </h2>
+          </div>
+
+          <div class="prose content-narrow" data-render-list="home.world.body"></div>
+        </div>
+
+        <aside class="index-panel" aria-label="Archive format tags">
+          <p class="index-panel__label">ARCHIVE INDEX</p>
+          <div class="tag-list tag-list--vertical" data-render-tags="home.world.tags"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         05. RECOMMENDED READING PATH
+         ========================================================= -->
+    <section class="section reading-path-section" id="reading-path" aria-labelledby="reading-path-title">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <p class="eyebrow" data-i18n="home.readingPath.eyebrow">RECOMMENDED READING PATH</p>
+          <h2 class="section-title" id="reading-path-title" data-i18n="home.readingPath.title">
+            You do not need to read everything
+          </h2>
+          <p class="section-intro" data-i18n="home.readingPath.intro">
+            The materials below are arranged as optional routes. Choose the path that matches your interest.
+          </p>
+        </div>
+
+        <div
+          class="reading-path-grid"
+          data-render-reading-routes="home.readingPath.routes"
+        ></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         06. PROJECT ENTRANCES
+         ========================================================= -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="home.projectSections.eyebrow">PROJECT ENTRANCES</p>
+          <h2 class="section-title" id="projects-title" data-i18n="home.projectSections.title">
+            Separate entry points into the archive
+          </h2>
+          <p class="section-intro" data-i18n="home.projectSections.intro">
+            The project does not need to be approached as a full story-world all at once.
+          </p>
+        </div>
+
+        <!-- Featured Project -->
+        <div class="project-group project-group--featured" id="featured-project">
+          <h3 class="project-group__title" data-i18n="home.projectSections.featured">
+            Featured Project
+          </h3>
+
+          <div
+            class="project-grid project-grid--featured"
+            data-render-projects="mainProject"
+          ></div>
+        </div>
+
+        <!-- Companion Projects -->
+        <div class="project-group" id="companion-projects">
+          <h3 class="project-group__title" data-i18n="home.projectSections.live">
+            Live / Workshop-friendly Companion Pieces
+          </h3>
+
+          <div
+            class="project-grid"
+            data-render-projects="nightOfSilence,reliquarians,firstGospel"
+          ></div>
+        </div>
+
+        <!-- Emotional Companion -->
+        <div class="project-group" id="emotional-companion">
+          <h3 class="project-group__title" data-i18n="home.projectSections.emotional">
+            Emotional Companion
+          </h3>
+
+          <div
+            class="project-grid project-grid--single"
+            data-render-projects="noahDreams"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         07. DIGITAL ARCHIVE SAMPLES
+         ========================================================= -->
+    <section class="section digital-archive-section" id="digital-archive" aria-labelledby="digital-archive-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="home.digitalSamples.eyebrow">DIGITAL ARCHIVE SAMPLES</p>
+          <h2 class="section-title" id="digital-archive-title" data-i18n="home.digitalSamples.title">
+            Web interface as narrative form
+          </h2>
+        </div>
+
+        <div class="prose content-narrow" data-render-list="home.digitalSamples.body"></div>
+
+        <div
+          class="project-grid digital-sample-grid"
+          data-render-projects="eden,templeGuide,archiveNotices"
+        ></div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         08. ABOUT THE CREATOR
+         ========================================================= -->
+    <section class="section creator-section" id="creator" aria-labelledby="creator-title">
+      <div class="container creator-grid">
+        <div class="creator-copy">
+          <div class="section-header">
+            <p class="eyebrow" data-i18n="home.creator.eyebrow">ABOUT THE CREATOR</p>
+            <h2 class="section-title" id="creator-title" data-i18n="home.creator.title">
+              Samantha Zhu
+            </h2>
+            <p class="section-subtitle" data-i18n="home.creator.role">
+              Writer / Interactive Narrative Designer
+            </p>
+          </div>
+
+          <div class="prose content-narrow" data-render-list="home.creator.body"></div>
+        </div>
+
+        <aside class="creator-card" aria-label="Creator summary">
+          <p class="creator-card__name" data-i18n="footer.name">Samantha Zhu</p>
+          <p class="creator-card__role" data-i18n="footer.role">
+            Writer / Interactive Narrative Designer
+          </p>
+          <p class="creator-card__location" data-i18n="footer.location">
+            Based in China · UTC+8
+          </p>
+          <a class="creator-card__email" href="mailto:samantha201223@163.com" data-i18n="footer.email">
+            samantha201223@163.com
+          </a>
+
+          <div class="tag-list tag-list--vertical creator-card__tags">
+            <span class="tag">Archive fiction</span>
+            <span class="tag">Web-based narrative interfaces</span>
+            <span class="tag">Low-pressure participation</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       09. CONTACT & RIGHTS FOOTER
+       ========================================================= -->
+  <footer class="site-footer" id="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__identity">
+      <p class="site-footer__name" data-i18n="footer.name">Samantha Zhu</p>
+      <p class="site-footer__role" data-i18n="footer.role">Writer / Interactive Narrative Designer</p>
+      <p class="site-footer__meta">
+        <span data-i18n="footer.location">China · UTC+8</span>
+        <span aria-hidden="true"> · </span>
+        <a href="mailto:samantha201223@163.com" data-i18n="footer.email">samantha201223@163.com</a>
+      </p>
+      <p class="site-footer__rights" data-i18n="footer.shortRights">© 2026 Samantha Zhu. All rights reserved. Shared for private review only.</p>
+    </div>
+
+    <nav class="site-footer__links" aria-label="Footer navigation">
+      <a href="index.html#reading-path" data-i18n="buttons.backToReadingPath">Back to Reading Path</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      <a href="#site-header" data-i18n="nav.backToTop">Back to top</a>
+    </nav>
+  </div>
+</footer>
+
+  <!-- =========================================================
+       PROJECT CARD TEMPLATE
+       main.js can clone this template to render project cards
+       from LANG[lang].projects.
+       ========================================================= -->
+  <template id="project-card-template">
+    <article class="project-card">
+      <p class="project-card__eyebrow" data-field="id"></p>
+
+      <h3 class="project-card__title" data-field="title"></h3>
+      <p class="project-card__subtitle" data-field="subtitle"></p>
+
+      <dl class="project-meta" data-field="meta"></dl>
+
+      <div class="tag-list project-card__tags" data-field="focus"></div>
+
+      <p class="project-card__description" data-field="description"></p>
+
+      <div class="button-group project-card__actions" data-field="buttons"></div>
+
+      <p class="download-note" data-field="pdfNote"></p>
+      <p class="project-card__note" data-field="note"></p>
+    </article>
+  </template>
+
+  <!-- =========================================================
+       READING ROUTE TEMPLATE
+       main.js can clone this template to render reading path cards.
+       ========================================================= -->
+  <template id="reading-route-template">
+    <article class="path-card">
+      <p class="path-card__number" data-field="id"></p>
+      <h3 class="path-card__title" data-field="title"></h3>
+      <p class="path-card__description" data-field="description"></p>
+      <ol class="path-card__list" data-field="items"></ol>
+    </article>
+  </template>
+
+  <noscript>
+    <div class="noscript-warning">
+      This page uses a small JavaScript file to load bilingual text. Please enable JavaScript to view the full dossier.
+    </div>
+  </noscript>
+</body>
+</html>

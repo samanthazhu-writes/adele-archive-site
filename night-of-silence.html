@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-page-i18n="metaTitle">The Adèle Archive: Night of Silence</title>
+  <meta name="description" content="A four-player silent chamber experience about complicity, grief, and the making of a holy lie." data-page-meta-description />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/lang.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+  <div class="site-header__inner container">
+    <a class="site-brand" href="index.html#start" aria-label="The Adèle Archive Home">
+      <span class="site-brand__mark">A</span>
+      <span class="site-brand__text" data-i18n="nav.brand">THE ADÈLE ARCHIVE</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html#start" class="site-nav__link" data-i18n="nav.start">Start Here</a>
+      <a href="main-project.html" class="site-nav__link" data-i18n="projects.mainProject.shortTitle">Main Project</a>
+      <a href="index.html#reading-path" class="site-nav__link" data-i18n="nav.path">Reading Path</a>
+      <a href="index.html#projects" class="site-nav__link" data-i18n="nav.projects">Projects</a>
+      <a href="index.html#digital-archive" class="site-nav__link" data-i18n="nav.digitalArchive">Digital Archive</a>
+      <a href="contact.html" class="site-nav__link" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" aria-label="Reading language">
+        <span class="lang-switch__label" data-i18n="meta.languageLabel">Reading Language</span>
+        <button class="lang-switch__button is-active" type="button" data-lang-button="en" aria-pressed="true">EN</button>
+        <button class="lang-switch__button" type="button" data-lang-button="zh" aria-pressed="false">中文</button>
+      </div>
+
+      <button class="mobile-menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" data-action="toggle-menu">
+        <span data-i18n="nav.menu">Menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+      <a href="index.html#start" class="mobile-menu__link" data-i18n="nav.start">Start Here</a>
+      <a href="main-project.html" class="mobile-menu__link" data-i18n="projects.mainProject.shortTitle">Main Project</a>
+      <a href="index.html#reading-path" class="mobile-menu__link" data-i18n="nav.path">Reading Path</a>
+      <a href="index.html#projects" class="mobile-menu__link" data-i18n="nav.projects">Projects</a>
+      <a href="index.html#digital-archive" class="mobile-menu__link" data-i18n="nav.digitalArchive">Digital Archive</a>
+      <a href="contact.html" class="mobile-menu__link" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="mobile-menu__lang">
+      <span class="mobile-menu__lang-label" data-i18n="meta.languageLabel">Reading Language</span>
+      <button type="button" data-lang-button="en">EN</button>
+      <button type="button" data-lang-button="zh">中文</button>
+    </div>
+  </div>
+</header>
+
+  <main id="main-content">
+    <section class="section hero-section project-page-hero" id="project-header" aria-labelledby="project-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-page-i18n="eyebrow">COMPANION PROJECT</p>
+          <h1 class="hero-title" id="project-title" data-page-i18n="title">Project Title</h1>
+          <p class="hero-subtitle" data-page-i18n="subtitle">Project subtitle.</p>
+
+          <div class="button-group access-card__actions">
+            <a class="button button-primary" href="assets/pdfs/The_Adele_Archive_Night_of_Silence_One_Page_Pitch.pdf" download data-i18n="buttons.downloadPitch">Download One-page Pitch</a>
+            <button
+  class="button button-secondary"
+  type="button"
+  data-copy-email="samantha201223@163.com"
+  data-i18n="buttons.requestSampleKit"
+>
+  Request Sample Kit
+</button>
+            <a class="button button-secondary" href="index.html#reading-path" data-i18n="buttons.backToReadingPath">Back to Reading Path</a>
+          </div>
+          <p class="download-note" data-i18n="common.pdfPrivateReview">PDF for private review only.</p>
+        </div>
+
+        <aside class="hero-panel" aria-label="Project summary">
+          <p class="hero-panel__label" data-page-template="projectFileLabel">PROJECT FILE</p>
+          <dl class="project-meta project-meta--hero">
+            <div class="project-meta__item"><dt data-i18n="common.format">Format</dt><dd data-page-i18n="meta.format">Format value</dd></div>
+            <div class="project-meta__item"><dt data-i18n="common.players">Players</dt><dd data-page-i18n="meta.players">Players value</dd></div>
+            <div class="project-meta__item"><dt data-i18n="common.duration">Duration</dt><dd data-page-i18n="meta.duration">Duration value</dd></div>
+            <div class="project-meta__item"><dt data-i18n="common.status">Status</dt><dd data-page-i18n="meta.status">Status value</dd></div>
+          </dl>
+          <div class="tag-list hero-tags" data-page-tags="tags"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="one-sentence-pitch" aria-labelledby="one-sentence-pitch-title">
+      <div class="container world-grid">
+        <div class="section-copy">
+          <div class="section-header">
+            <p class="eyebrow" data-page-template="sections.oneSentencePitch.eyebrow">ONE-SENTENCE PITCH</p>
+            <h2 class="section-title" id="one-sentence-pitch-title" data-page-template="sections.oneSentencePitch.title">One-sentence Pitch</h2>
+          </div>
+          <div class="prose content-narrow"><p data-page-i18n="oneSentencePitch">One clear sentence explaining the project.</p></div>
+        </div>
+        <aside class="index-panel" aria-label="Project page index">
+          <p class="index-panel__label" data-page-template="readingOrderLabel">READING ORDER</p>
+          <div class="tag-list tag-list--vertical">
+            <a class="tag" href="#premise" data-page-template="sections.premise.title">Premise</a>
+            <a class="tag" href="#player-experience" data-page-template="sections.playerExperience.title">Player Experience</a>
+            <a class="tag" href="#core-mechanic" data-page-template="sections.coreMechanic.title">Core Mechanic</a>
+            <a class="tag" href="#development-potential" data-page-template="sections.developmentPotential.title">Development Potential</a>
+            <a class="tag" href="#relation" data-page-template="sections.relation.title">Relation</a>
+            <a class="tag" href="#content-note" data-page-template="sections.contentNote.title">Content Note</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section reading-path-section" id="format" aria-labelledby="format-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow" data-page-template="sections.format.eyebrow">FORMAT</p>
+          <h2 class="section-title" id="format-title" data-page-template="sections.format.title">Format / Players / Duration / Status</h2>
+        </div>
+        <div class="project-detail-grid">
+          <article class="path-card"><p class="path-card__number">01</p><h3 class="path-card__title" data-i18n="common.format">Format</h3><p class="path-card__description" data-page-i18n="formatDetails.format">Format detail.</p></article>
+          <article class="path-card"><p class="path-card__number">02</p><h3 class="path-card__title" data-i18n="common.players">Players</h3><p class="path-card__description" data-page-i18n="formatDetails.players">Players detail.</p></article>
+          <article class="path-card"><p class="path-card__number">03</p><h3 class="path-card__title" data-i18n="common.duration">Duration</h3><p class="path-card__description" data-page-i18n="formatDetails.duration">Duration detail.</p></article>
+          <article class="path-card"><p class="path-card__number">04</p><h3 class="path-card__title" data-i18n="common.status">Status</h3><p class="path-card__description" data-page-i18n="formatDetails.status">Status detail.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="premise" aria-labelledby="premise-title"><div class="container"><div class="section-header"><p class="eyebrow" data-page-template="sections.premise.eyebrow">PREMISE</p><h2 class="section-title" id="premise-title" data-page-template="sections.premise.title">Premise</h2></div><div class="prose content-narrow" data-page-list="premise"></div></div></section>
+
+    <section class="section reading-path-section" id="player-experience" aria-labelledby="player-experience-title"><div class="container"><div class="section-header"><p class="eyebrow" data-page-template="sections.playerExperience.eyebrow">PLAYER EXPERIENCE</p><h2 class="section-title" id="player-experience-title" data-page-template="sections.playerExperience.title">Player Experience</h2></div><div class="prose content-narrow" data-page-list="playerExperience"></div></div></section>
+
+    <section class="section" id="core-mechanic" aria-labelledby="core-mechanic-title">
+      <div class="container world-grid"><div class="section-copy"><div class="section-header"><p class="eyebrow" data-page-template="sections.coreMechanic.eyebrow">CORE MECHANIC</p><h2 class="section-title" id="core-mechanic-title" data-page-template="sections.coreMechanic.title">Core Mechanic</h2></div><div class="prose content-narrow" data-page-list="coreMechanic.body"></div></div><aside class="index-panel"><p class="index-panel__label" data-page-template="coreActionLabel">CORE ACTIONS</p><div class="tag-list tag-list--vertical" data-page-tags="coreMechanic.actions"></div></aside></div>
+    </section>
+
+    <section class="section reading-path-section" id="development-potential" aria-labelledby="development-potential-title"><div class="container"><div class="section-header"><p class="eyebrow" data-page-template="sections.developmentPotential.eyebrow">DEVELOPMENT POTENTIAL</p><h2 class="section-title" id="development-potential-title" data-page-template="sections.developmentPotential.title">Development Potential</h2></div><div class="prose content-narrow" data-page-list="developmentPotential.body"></div><div class="tag-list hero-tags" data-page-tags="developmentPotential.tags"></div></div></section>
+
+    <section class="section" id="relation" aria-labelledby="relation-title"><div class="container"><div class="section-header"><p class="eyebrow" data-page-template="sections.relation.eyebrow">RELATION TO THE ADÈLE ARCHIVE</p><h2 class="section-title" id="relation-title" data-page-template="sections.relation.title">Relation to The Adèle Archive</h2></div><div class="prose content-narrow" data-page-list="relation"></div></div></section>
+
+    <section class="section content-note-section" id="content-note" aria-labelledby="content-note-title"><div class="container"><article class="content-note"><div class="section-header"><p class="eyebrow" data-page-template="sections.contentNote.eyebrow">CONTENT NOTE</p><h2 class="section-title" id="content-note-title" data-page-template="sections.contentNote.title">Content Note</h2></div><div class="prose content-narrow" data-page-list="contentNote"></div><div class="content-note__tags"><span class="tag" data-i18n="risk.fictionalSystemLanguage">Fictional institutional language appears as part of the system being critiqued.</span><span class="tag" data-i18n="risk.noRomanticSuffering">The project does not romanticise suffering or sacrifice.</span><span class="tag" data-i18n="risk.religionNote">Fictional religious language is used to examine myth-making.</span></div></article></div></section>
+
+    <section class="section" id="sample-kit" aria-labelledby="sample-kit-title"><div class="container world-grid"><div class="section-copy"><div class="section-header"><p class="eyebrow" data-page-template="sections.materials.eyebrow">MATERIALS</p><h2 class="section-title" id="sample-kit-title" data-page-template="sections.materials.title">One-page Pitch & Sample Kit</h2></div><div class="prose content-narrow"><p data-page-i18n="materials.pitchNote">A one-page pitch is available for private review.</p><p data-page-i18n="materials.sampleKitNote">A short sample kit can be prepared upon request.</p></div><div class="button-group access-card__actions"><a class="button button-primary" href="assets/pdfs/The_Adele_Archive_Night_of_Silence_One_Page_Pitch.pdf" download data-i18n="buttons.downloadPitch">Download One-page Pitch</a><button
+  class="button button-secondary"
+  type="button"
+  data-copy-email="samantha201223@163.com"
+  data-i18n="buttons.contactAuthor"
+>
+  Contact the Author
+</button><a class="button button-secondary" href="index.html#reading-path" data-i18n="buttons.backToReadingPath">Back to Reading Path</a></div></div><aside class="index-panel"><p class="index-panel__label" data-page-template="sampleKitLabel">SAMPLE KIT MAY INCLUDE</p><div class="tag-list tag-list--vertical" data-page-tags="materials.sampleKitItems"></div></aside></div></section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title"><div class="container"><div class="contact-card"><div class="section-header"><p class="eyebrow" data-i18n="home.contact.eyebrow">CONTACT</p><h2 class="section-title" id="contact-title" data-page-template="sections.contact.title">Contact & Rights</h2></div><div class="prose content-narrow"><p data-i18n="home.contact.body">For invited review, collaboration discussion, development inquiry, or request for additional sample materials, please contact the author by email.</p><p><strong data-i18n="home.contact.emailLabel">Email</strong>: <a href="mailto:samantha201223@163.com">samantha201223@163.com</a></p><p><strong data-i18n="home.contact.locationLabel">Location</strong>: <span data-i18n="home.contact.location">China</span> · <strong data-i18n="home.contact.timezoneLabel">Time Zone</strong>: <span data-i18n="home.contact.timezone">UTC+8</span></p><p data-page-template="rightsNotice">All materials are selected development samples for private review only. Please do not reproduce, forward, adapt, or publicly share without the author’s permission.</p></div></div></div></section>
+  </main>
+
+  <footer class="site-footer" id="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__identity">
+      <p class="site-footer__name" data-i18n="footer.name">Samantha Zhu</p>
+      <p class="site-footer__role" data-i18n="footer.role">Writer / Interactive Narrative Designer</p>
+      <p class="site-footer__meta">
+        <span data-i18n="footer.location">China · UTC+8</span>
+        <span aria-hidden="true"> · </span>
+        <a href="mailto:samantha201223@163.com" data-i18n="footer.email">samantha201223@163.com</a>
+      </p>
+      <p class="site-footer__rights" data-i18n="footer.shortRights">© 2026 Samantha Zhu. All rights reserved. Shared for private review only.</p>
+    </div>
+
+    <nav class="site-footer__links" aria-label="Footer navigation">
+      <a href="index.html#reading-path" data-i18n="buttons.backToReadingPath">Back to Reading Path</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      <a href="#site-header" data-i18n="nav.backToTop">Back to top</a>
+    </nav>
+  </div>
+</footer>
+
+  <script>
+    window.PAGE_PROJECT_DATA = {
+  "en": {
+    "metaTitle": "The Adèle Archive: Night of Silence",
+    "metaDescription": "A four-player silent chamber experience about complicity, grief, and the making of a holy lie.",
+    "eyebrow": "COMPANION PROJECT",
+    "title": "The Adèle Archive: Night of Silence",
+    "subtitle": "A four-player silent chamber experience about complicity, grief, and the making of a holy lie.",
+    "meta": {
+      "format": "Silent chamber experience / intimate script game",
+      "players": "4 players + facilitator",
+      "duration": "Approx. 90–120 minutes",
+      "status": "In development / not publicly released"
+    },
+    "tags": [
+      "silence",
+      "complicity",
+      "institutional language",
+      "first myth-making",
+      "low-pressure participation"
+    ],
+    "oneSentencePitch": "Night of Silence places four participants inside the sealed room where the first official account of Adèle’s death will be assembled, not to solve a murder, but to decide how a holy lie begins.",
+    "formatDetails": {
+      "format": "A contained silent chamber experience built around testimony, document handling, restricted speech, and final report-making.",
+      "players": "Designed for four players with one facilitator or operator; roles are function-based and gender-neutral.",
+      "duration": "Approximately 90–120 minutes, with potential for shorter workshop readings or staged development sessions.",
+      "status": "In development as a companion piece to She Was Not a Goddess: The Adèle Archive."
+    },
+    "premise": [
+      "The experience is set on the night Adèle dies, before the archive exists and before the Mother Goddess myth has fully hardened into public history.",
+      "Four attendants or institutional functionaries remain inside the sealed chamber. Each holds a partial record: a body report, a textual revision, an object register, a night log, or another fragment of the final hours.",
+      "The players are not asked to identify a murderer. The central question is more uncomfortable: what version of Adèle’s death will be written first, and who benefits when silence becomes official language?"
+    ],
+    "playerExperience": [
+      "Players read, arrange, withhold, mark, and submit evidence under increasing pressure. Conversation begins possible, then becomes restricted, and may eventually be replaced by gestures, word tokens, evidence placement, and report choices.",
+      "The experience is designed for low-pressure participation. It does not require heavy theatrical performance or competitive deduction. The tension comes from limited speech, conflicting obligations, and the act of writing a record that may become history.",
+      "By the end, the group must decide whether to preserve Adèle’s complexity, protect themselves, protect the institution, or help manufacture the first sacred explanation of her death."
+    ],
+    "coreMechanic": {
+      "body": [
+        "The core mechanic is the making of an official death account under conditions of shrinking speech. Players begin with access to language, then experience limits that make explanation, apology, and accusation increasingly difficult.",
+        "Instead of solving a conventional murder mystery, players construct a report: what happened, what can be admitted, what must be omitted, and what sentence will survive as the first public version of Adèle’s death."
+      ],
+      "actions": [
+        "read fragments",
+        "spend word tokens",
+        "arrange evidence",
+        "submit report",
+        "choose official wording"
+      ]
+    },
+    "developmentPotential": {
+      "body": [
+        "Night of Silence is suitable for a contained black-box setup, chamber reading, low-tech immersive workshop, or Jubensha-adjacent facilitated experience.",
+        "Its scale is intentionally modest: four players, one facilitator, printed materials, audio cues, a table or enclosed room, and a clear final report structure. This makes it workshop-friendly and adaptable for early testing."
+      ],
+      "tags": [
+        "contained setup",
+        "workshop-friendly",
+        "document-led interaction",
+        "low-pressure roleplay",
+        "immersive chamber format"
+      ]
+    },
+    "relation": [
+      "Within The Adèle Archive, this piece answers the question that precedes the mother project: before later generations could judge the myth, who first wrote it down?",
+      "It connects directly to the larger archive by showing the birth of institutional language: the moment grief, fear, self-protection, and devotion begin to turn a woman’s death into sacred history."
+    ],
+    "contentNote": [
+      "Content note: death, institutional control, bodily autonomy, religious language, psychological pressure, grief, and implied coercion.",
+      "The project does not romanticise suffering or sacrifice. Fictional sacred and institutional language appears as part of the system being critiqued, not as an endorsed worldview.",
+      "No graphic violence is required in the current design."
+    ],
+    "materials": {
+      "pitchNote": "A one-page pitch is available for private review as a concise overview of the project format and development direction.",
+      "sampleKitNote": "A short sample kit can be prepared upon request, rather than sending a full script at this stage.",
+      "sampleKitItems": [
+        "one-page pitch",
+        "role overview",
+        "sample evidence fragments",
+        "speech restriction rules",
+        "ending structure",
+        "content / safety note"
+      ]
+    }
+  },
+  "zh": {
+    "metaTitle": "阿黛勒档案：静默之夜",
+    "metaDescription": "一个四人静默密室体验，关于共谋、哀悼，以及一个神圣谎言如何被制造出来。",
+    "eyebrow": "可合作开发衍生项目",
+    "title": "阿黛勒档案：静默之夜",
+    "subtitle": "一个四人静默密室体验，关于共谋、哀悼，以及一个神圣谎言如何被制造出来。",
+    "meta": {
+      "format": "静默 chamber experience / 亲密型剧本游戏",
+      "players": "4名玩家 + 主持人",
+      "duration": "约90–120分钟",
+      "status": "开发中 / 未公开发布"
+    },
+    "tags": [
+      "沉默",
+      "共谋",
+      "制度语言",
+      "第一版神话",
+      "低压参与"
+    ],
+    "oneSentencePitch": "《静默之夜》让四名参与者进入阿黛勒死亡当夜的封闭房间；他们不是来破解谋杀，而是要决定关于她死亡的第一版官方说法如何被写下。",
+    "formatDetails": {
+      "format": "一个封闭空间中的静默体验，围绕证词、档案、受限发言和最终报告展开。",
+      "players": "四名玩家与一名主持人；角色以职责设计，不强调性别。",
+      "duration": "约90–120分钟，也可压缩为工作坊阅读或阶段性测试版本。",
+      "status": "作为《She Was Not a Goddess: The Adèle Archive》的衍生 companion piece 开发中。"
+    },
+    "premise": [
+      "故事发生在阿黛勒死亡当夜。此时后世档案尚未形成，母神神话也还没有完全变成不可动摇的公共历史。",
+      "四名贴身侍者或神殿职能人员被留在封闭圣所中。每个人都掌握一部分记录：身体报告、语句修订、物品登记、夜间监听日志，或关于最后几个小时的残缺证词。",
+      "玩家并不是来找出“谁是凶手”。更困难的问题是：阿黛勒死亡的第一版叙事将如何被写下？当沉默进入制度语言，谁会因此被保护，谁会因此再次消失？"
+    ],
+    "playerExperience": [
+      "玩家需要阅读、排列、标记、保留或提交证据。最初他们仍可以交谈，随后语言逐渐受到限制，最后可能只能依靠手势、词语额度、证据摆放和报告选择来表达立场。",
+      "这个体验强调低压参与，不要求高强度表演，也不以竞技推理为核心。它的张力来自：有限语言、互相矛盾的职责，以及玩家亲手写下一份可能成为历史的记录。",
+      "最终，玩家必须决定：是保留阿黛勒的复杂性，保护自己，保护机构，还是参与制造关于她死亡的第一版神圣解释。"
+    ],
+    "coreMechanic": {
+      "body": [
+        "核心机制是在语言逐渐被夺走的条件下，制作一份官方死亡报告。玩家最初仍拥有解释能力，但随着机制推进，辩解、道歉和指认都会变得越来越困难。",
+        "它不是传统谋杀推理。玩家真正构建的是一份报告：发生了什么，什么可以被承认，什么必须被省略，哪一句话会作为阿黛勒死亡的第一版公开说法留下来。"
+      ],
+      "actions": [
+        "阅读碎片",
+        "消耗词语额度",
+        "排列证据",
+        "提交报告",
+        "选择官方措辞"
+      ]
+    },
+    "developmentPotential": {
+      "body": [
+        "《静默之夜》适合被发展为黑箱空间体验、亲密型 chamber reading、低技术沉浸式工作坊，或受 Jubensha 启发的主持型互动体验。",
+        "它的制作规模有意保持克制：四名玩家、一名主持人、纸质材料、音频提示、一张桌子或一个封闭房间，以及清晰的最终报告结构。这使它非常适合早期试演和工作坊开发。"
+      ],
+      "tags": [
+        "封闭空间",
+        "适合工作坊",
+        "文档驱动互动",
+        "低压扮演",
+        "沉浸式静室体验"
+      ]
+    },
+    "relation": [
+      "在《阿黛勒档案》的整体结构中，这个作品回答的是母项目之前的问题：在后人审判母神神话之前，究竟是谁先把这个神话写了下来？",
+      "它直接连接母项目的核心：制度语言的诞生。也就是哀悼、恐惧、自保与敬拜如何一起把一个女人的死亡改写成神圣历史。"
+    ],
+    "contentNote": [
+      "内容提示：死亡、制度控制、身体自主权、宗教化语言、心理压力、哀悼与隐含强迫。",
+      "本项目不浪漫化痛苦或牺牲。作品中的神圣语言与机构语言属于被批判的虚构制度，不代表作者立场。",
+      "当前设计不需要图像化暴力呈现。"
+    ],
+    "materials": {
+      "pitchNote": "本项目可提供一页英文 pitch，用于私人阅读与合作评估。",
+      "sampleKitNote": "如有需要，可进一步准备短版 sample kit，而不是在现阶段发送完整剧本。",
+      "sampleKitItems": [
+        "一页 pitch",
+        "角色概览",
+        "证据碎片样例",
+        "静默机制规则",
+        "结局结构",
+        "内容与安全说明"
+      ]
+    }
+  }
+};
+    window.PAGE_TEMPLATE_TEXT = {
+      en: {
+        projectFileLabel: 'PROJECT FILE', readingOrderLabel: 'READING ORDER', coreActionLabel: 'CORE ACTIONS', sampleKitLabel: 'SAMPLE KIT MAY INCLUDE',
+        sections: {
+          oneSentencePitch: {eyebrow:'ONE-SENTENCE PITCH', title:'One-sentence Pitch'},
+          format: {eyebrow:'FORMAT', title:'Format / Players / Duration / Status'},
+          premise: {eyebrow:'PREMISE', title:'Premise'},
+          playerExperience: {eyebrow:'PLAYER EXPERIENCE', title:'Player Experience'},
+          coreMechanic: {eyebrow:'CORE MECHANIC', title:'Core Mechanic'},
+          developmentPotential: {eyebrow:'DEVELOPMENT POTENTIAL', title:'Development Potential'},
+          relation: {eyebrow:'RELATION TO THE ADÈLE ARCHIVE', title:'Relation to The Adèle Archive'},
+          contentNote: {eyebrow:'CONTENT NOTE', title:'Content Note'},
+          materials: {eyebrow:'MATERIALS', title:'One-page Pitch & Sample Kit'},
+          contact: {title:'Contact & Rights'}
+        },
+        rightsNotice: 'All materials are selected development samples for private review only. Please do not reproduce, forward, adapt, or publicly share without the author’s permission.'
+      },
+      zh: {
+        projectFileLabel: '项目档案', readingOrderLabel: '阅读顺序', coreActionLabel: '核心动作', sampleKitLabel: '样章包可包含',
+        sections: {
+          oneSentencePitch: {eyebrow:'一句话提案', title:'一句话提案'},
+          format: {eyebrow:'项目形式', title:'形式 / 人数 / 时长 / 状态'},
+          premise: {eyebrow:'前提设定', title:'Premise / 前提设定'},
+          playerExperience: {eyebrow:'玩家体验', title:'Player Experience / 玩家体验'},
+          coreMechanic: {eyebrow:'核心机制', title:'Core Mechanic / 核心机制'},
+          developmentPotential: {eyebrow:'开发潜力', title:'Development Potential / 开发潜力'},
+          relation: {eyebrow:'与阿黛勒档案的关系', title:'Relation to The Adèle Archive / 与母项目的关系'},
+          contentNote: {eyebrow:'内容提示', title:'Content Note / 内容提示'},
+          materials: {eyebrow:'项目材料', title:'One-page Pitch 与 Sample Kit'},
+          contact: {title:'Contact & Rights / 联系方式与权利声明'}
+        },
+        rightsNotice: '本页面材料均为私人阅读与项目评估用的精选开发样本。未经作者许可，请勿复制、转发、改编或公开传播。'
+      }
+    };
+
+    (function () {
+      const STORAGE_KEY = 'adeleArchiveLanguage';
+      const DEFAULT_LANG = 'en';
+      function getByPath(object, path) {
+        return path.split('.').reduce((current, key) => current && Object.prototype.hasOwnProperty.call(current, key) ? current[key] : undefined, object);
+      }
+      function setText(selector, source) {
+        document.querySelectorAll(selector).forEach((node) => {
+          const path = node.getAttribute(selector.slice(1, -1));
+          const value = getByPath(source, path);
+          if (typeof value === 'string') node.textContent = value;
+        });
+      }
+      function renderList(source) {
+        document.querySelectorAll('[data-page-list]').forEach((container) => {
+          const list = getByPath(source, container.getAttribute('data-page-list'));
+          container.innerHTML = '';
+          if (!Array.isArray(list)) return;
+          list.forEach((item) => { const p = document.createElement('p'); p.textContent = item; container.appendChild(p); });
+        });
+      }
+      function renderTags(source) {
+        document.querySelectorAll('[data-page-tags]').forEach((container) => {
+          const tags = getByPath(source, container.getAttribute('data-page-tags'));
+          container.innerHTML = '';
+          if (!Array.isArray(tags)) return;
+          tags.forEach((item) => { const span = document.createElement('span'); span.className = 'tag'; span.textContent = item; container.appendChild(span); });
+        });
+      }
+      function applyPageLanguage(lang) {
+        if (!['en','zh'].includes(lang)) lang = DEFAULT_LANG;
+        const data = window.PAGE_PROJECT_DATA[lang];
+        const template = window.PAGE_TEMPLATE_TEXT[lang];
+        if (!data || !template) return;
+        document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+        document.documentElement.dataset.lang = lang;
+        document.title = data.metaTitle || document.title;
+        const desc = document.querySelector('[data-page-meta-description]');
+        if (desc && data.metaDescription) desc.setAttribute('content', data.metaDescription);
+        setText('[data-page-i18n]', data);
+        setText('[data-page-template]', template);
+        renderList(data);
+        renderTags(data);
+        document.querySelectorAll('[data-lang-button]').forEach((button) => {
+          const active = button.getAttribute('data-lang-button') === lang;
+          button.classList.toggle('is-active', active);
+          button.setAttribute('aria-pressed', String(active));
+        });
+      }
+      document.addEventListener('DOMContentLoaded', () => {
+        const saved = localStorage.getItem(STORAGE_KEY) || DEFAULT_LANG;
+        applyPageLanguage(saved);
+        document.querySelectorAll('[data-lang-button]').forEach((button) => {
+          button.addEventListener('click', () => {
+            const lang = button.getAttribute('data-lang-button');
+            localStorage.setItem(STORAGE_KEY, lang);
+            applyPageLanguage(lang);
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

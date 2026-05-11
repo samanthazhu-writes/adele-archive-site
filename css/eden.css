@@ -1,0 +1,223 @@
+/* =========================================================
+   EDEN Maintenance Logs — Serious Reading Dossier Version
+   Place as: css/eden.css
+   Direction: white system record / deep-blue headers / no gradients
+   ========================================================= */
+
+.eden-body {
+  background: var(--bg-main, #FAFAF7) !important;
+}
+
+.eden-main {
+  --eden-accent: var(--project-eden, #607D86);
+  --eden-accent-deep: #344057;
+  --eden-panel: #FFFFFF;
+  --eden-line: rgba(96, 125, 134, 0.34);
+  --eden-paper: #F7F5EF;
+}
+
+.eden-hero {
+  padding-top: 64px;
+  padding-bottom: 42px;
+  background: var(--bg-main, #FAFAF7) !important;
+  border-bottom: 1px solid var(--line-soft, rgba(201, 209, 220, 0.72));
+}
+
+.eden-shell {
+  border: 1px solid var(--eden-line);
+  border-left: 4px solid var(--eden-accent-deep);
+  border-radius: 0;
+  background: var(--eden-panel);
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.eden-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--eden-line);
+  background: var(--eden-accent-deep);
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.eden-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 32px;
+  align-items: center;
+  padding: 32px;
+}
+
+.eden-status-panel,
+.eden-command-card,
+.eden-log-card {
+  border: 1px solid var(--eden-line);
+  border-radius: 0;
+  background: var(--eden-panel);
+  box-shadow: none;
+}
+
+.eden-status-panel {
+  padding: 20px;
+  border-top: 4px solid var(--eden-accent-deep);
+}
+
+.eden-mini-label,
+.eden-command-label,
+.eden-log-label {
+  margin-bottom: 8px;
+  color: var(--eden-accent-deep);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.eden-access {
+  color: var(--blue-ink, #263246);
+  font-family: var(--font-en-serif, "Noto Serif", Georgia, serif);
+  font-size: 21px;
+  font-weight: 560;
+  line-height: 1.28;
+}
+
+html[data-lang="zh"] .eden-access {
+  font-family: var(--font-zh-sans, "Noto Sans SC", sans-serif);
+  font-weight: 650;
+}
+
+.eden-classification,
+.eden-command-note,
+.eden-log-time {
+  margin-top: 12px;
+  color: var(--text-muted, #6B7280);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.eden-notice {
+  border-radius: 0 !important;
+  border-left-color: var(--eden-accent-deep) !important;
+}
+
+.eden-interface-section {
+  background: var(--eden-paper) !important;
+  border-block: 1px solid var(--line-soft, rgba(201, 209, 220, 0.72));
+}
+
+.eden-two-column {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 32px;
+  align-items: start;
+}
+
+.eden-command-card {
+  padding: 20px;
+  border-left: 4px solid var(--eden-accent);
+}
+
+.eden-command-card code {
+  display: block;
+  padding: 12px;
+  border: 1px solid var(--eden-line);
+  border-radius: 0;
+  background: var(--eden-paper);
+  color: var(--eden-accent-deep);
+  font-family: "Noto Sans", "Consolas", monospace;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.eden-log-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.eden-log-card {
+  position: relative;
+  padding: 24px;
+  border-left: 4px solid var(--eden-accent);
+}
+
+.eden-log-card::before {
+  content: "SYSTEM RECORD";
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 4px 7px;
+  background: var(--eden-accent-deep);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.eden-log-card h3,
+.eden-log-title {
+  color: var(--blue-ink, #263246);
+  font-family: var(--font-en-serif, "Noto Serif", Georgia, serif);
+  font-weight: 560;
+}
+
+html[data-lang="zh"] .eden-log-card h3,
+html[data-lang="zh"] .eden-log-title {
+  font-family: var(--font-zh-sans, "Noto Sans SC", sans-serif);
+  font-weight: 650;
+}
+
+.eden-log-block {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--eden-line);
+}
+
+.eden-log-block p {
+  color: var(--text-secondary, #4B5563);
+}
+
+.eden-log-label {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 3px 6px;
+  border: 1px solid var(--eden-line);
+  background: transparent;
+  color: var(--eden-accent-deep);
+}
+
+.eden-raw,
+.eden-residue,
+.eden-operator-note {
+  border-radius: 0;
+  border: 1px solid var(--eden-line);
+  border-left: 4px solid var(--eden-accent);
+  background: #fff;
+  padding: 16px;
+}
+
+.eden-actions,
+.eden-bottom-actions {
+  border-top: 1px solid var(--line-soft, rgba(201, 209, 220, 0.72));
+  padding-top: 22px;
+}
+
+@media (max-width: 860px) {
+  .eden-hero-grid,
+  .eden-two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .eden-hero-grid {
+    padding: 24px;
+  }
+
+  .eden-topline {
+    flex-direction: column;
+  }
+}

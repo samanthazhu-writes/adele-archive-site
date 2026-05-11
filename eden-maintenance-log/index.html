@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Adèle Archive: EDEN Maintenance Log</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <noscript>
+    <div class="noscript">EDEN MAINTENANCE INTERFACE requires JavaScript to run.</div>
+  </noscript>
+
+  <div id="app" class="app-shell">
+    <section id="languageScreen" class="language-screen screen active" aria-label="Language selection">
+      <div class="language-panel panel">
+        <div class="boot-header">
+          <span>EDEN CENTRAL ARCHIVE SYSTEM</span>
+          <span>LANGUAGE ACCESS PROFILE // REQUIRED</span>
+        </div>
+        <div class="panel-title">SELECT MAINTENANCE LANGUAGE</div>
+        <h1>ARCHIVE ACCESS LANGUAGE</h1>
+        <div class="content-notice" role="note" aria-label="Content notice">
+          <div class="notice-title">CONTENT NOTICE / 内容提醒</div>
+          <div class="notice-grid">
+            <div>
+              <p>本互动档案包含以下主题：身体自主权被剥夺、制度化母职神话、医疗/生命维持系统中的控制、疼痛记录、拒食、沉默与拒绝被重新命名、档案删除，以及心理压迫。</p>
+              <p>作品批判的是把女性、母职、身体、名字与痛苦工具化的制度；并不否定真实的母亲、照护者、宗教经验或任何人的身份选择。</p>
+              <p>文中“污染”“净化”“风险”等词是 EDEN 系统的控制性分类语言，不代表作者立场，也不用于指代任何现实群体、性取向或性别身份。</p>
+            </div>
+            <div>
+              <p>This interactive archive includes themes of bodily autonomy, coerced sanctification, institutional motherhood, medicalized control, pain records, food refusal, silencing, refusal, psychological pressure, and archive deletion.</p>
+              <p>The work critiques systems that instrumentalize women, motherhood, bodies, names, and suffering. It does not reject real mothers, caregivers, religious experience, or anyone's chosen identity.</p>
+              <p>Terms such as “contamination,” “purification,” and “risk” are EDEN's control-language inside the fiction. They are not the author's position and are not used to describe any real-world community, sexuality, or gender identity.</p>
+            </div>
+          </div>
+          <div class="notice-footnote">No graphic sexual content. No visual gore. No player data is collected by this static page.</div>
+        </div>
+        <p class="language-copy">请选择本次维护会话使用的文本层。系统标签将保留为 EDEN 原始接口语言，但日志正文、维护提醒、系统回执会切换为对应版本。</p>
+        <p class="language-copy">Select the textual layer for this maintenance session. Interface labels remain in EDEN system language; archive bodies, operator notes, and final receipts will follow the selected access profile.</p>
+        <div class="language-options">
+          <button class="command-btn language-btn" type="button" data-lang="zh">
+            [ 中文维护档案 ]<br />
+            <span>更接近阿黛勒档案内部旁注，保留中文叙事的阴影和停顿。</span>
+          </button>
+          <button class="command-btn language-btn" type="button" data-lang="en">
+            [ ENGLISH ARCHIVE ACCESS ]<br />
+            <span>Clearer for overseas readers, but written as an archive version rather than a line-by-line translation.</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="bootScreen" class="boot-screen screen" aria-label="Boot sequence">
+      <div class="boot-panel">
+        <div class="boot-header">
+          <span>EDEN CENTRAL ARCHIVE SYSTEM</span>
+          <span>VERSION 7.4.12 // SANCTUARY ARCHIVE NODE</span>
+        </div>
+        <pre id="bootText" class="boot-text" aria-live="polite"></pre>
+        <div class="boot-warning hidden" id="bootWarning"></div>
+        <button id="enterBtn" class="command-btn boot-btn hidden" type="button">[ ENTER_MAINTENANCE_INTERFACE ]</button>
+      </div>
+    </section>
+
+    <section id="mainScreen" class="main-screen screen" aria-label="Maintenance dashboard">
+      <header class="topbar">
+        <div>
+          <div class="system-title">EDEN CENTRAL ARCHIVE SYSTEM</div>
+          <div id="systemSubtitle" class="system-subtitle">档案维护接口 / MAINTENANCE INTERFACE</div>
+        </div>
+        <div class="topbar-meta">
+          <span>ARCHIVE: ADEL-SPET / MOTHER-GODDESS / RESTRICTED</span>
+          <span>OPERATOR: TEMP-MAINT-07</span>
+          <span id="sessionStatus">STATUS: LIVE</span>
+          <button id="langSwitchBtn" class="inline-command" type="button">SWITCH_TO_EN</button>
+        </div>
+      </header>
+
+      <aside class="panel task-panel">
+        <div class="panel-title">TASK INDEX</div>
+        <div id="taskList" class="task-list"></div>
+      </aside>
+
+      <main class="panel log-panel">
+        <div class="panel-title">CORRUPTED LOG VIEWER</div>
+        <div class="file-header" id="fileHeader"></div>
+        <div id="logContent" class="log-content"></div>
+      </main>
+
+      <aside class="panel output-panel">
+        <div class="panel-title">SYSTEM OUTPUT</div>
+        <div id="metrics" class="metrics"></div>
+        <div class="system-message" id="systemMessage">
+          <p>> Awaiting maintenance command.</p>
+        </div>
+      </aside>
+
+      <footer class="command-line">
+        <div>
+          <div class="panel-title">COMMAND LINE</div>
+          <div id="commandHint" class="command-hint">请选择维护指令以继续。</div>
+        </div>
+        <div id="commandButtons" class="command-buttons"></div>
+      </footer>
+    </section>
+
+    <section id="finalScreen" class="final-screen screen" aria-label="Final protocol">
+      <div class="final-panel panel">
+        <div class="panel-title">FINAL MAINTENANCE PROTOCOL</div>
+        <h1 id="finalTitle">FINAL PROTOCOL / 最终维护协议</h1>
+        <div id="finalIntro"></div>
+        <div id="finalMetrics" class="metrics final-metrics"></div>
+        <div id="finalOptions" class="final-options"></div>
+      </div>
+    </section>
+
+    <section id="resultScreen" class="result-screen screen" aria-label="Archive output receipt">
+      <div class="receipt-wrap">
+        <div id="receipt" class="receipt panel"></div>
+        <div class="receipt-actions">
+          <button id="downloadBtn" class="command-btn" type="button">[ DOWNLOAD_RECORD_IMAGE ]</button>
+          <button id="restartBtn" class="command-btn" type="button">[ RESTART_SESSION ]</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/result.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-eden-i18n="metaTitle">EDEN Maintenance Logs</title>
+  <meta name="description" content="A fictional system interface documenting how protection becomes captivity in The Adèle Archive." data-eden-meta-description />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/eden.css" />
+  <script src="js/lang.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body class="eden-body">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header" id="site-header">
+  <div class="site-header__inner container">
+    <a class="site-brand" href="index.html#start" aria-label="The Adèle Archive Home">
+      <span class="site-brand__mark">A</span>
+      <span class="site-brand__text" data-i18n="nav.brand">THE ADÈLE ARCHIVE</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html#start" class="site-nav__link" data-i18n="nav.start">Start Here</a>
+      <a href="main-project.html" class="site-nav__link" data-i18n="projects.mainProject.shortTitle">Main Project</a>
+      <a href="index.html#reading-path" class="site-nav__link" data-i18n="nav.path">Reading Path</a>
+      <a href="index.html#projects" class="site-nav__link" data-i18n="nav.projects">Projects</a>
+      <a href="index.html#digital-archive" class="site-nav__link" data-i18n="nav.digitalArchive">Digital Archive</a>
+      <a href="contact.html" class="site-nav__link" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" aria-label="Reading language">
+        <span class="lang-switch__label" data-i18n="meta.languageLabel">Reading Language</span>
+        <button class="lang-switch__button is-active" type="button" data-lang-button="en" aria-pressed="true">EN</button>
+        <button class="lang-switch__button" type="button" data-lang-button="zh" aria-pressed="false">中文</button>
+      </div>
+
+      <button class="mobile-menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" data-action="toggle-menu">
+        <span data-i18n="nav.menu">Menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+      <a href="index.html#start" class="mobile-menu__link" data-i18n="nav.start">Start Here</a>
+      <a href="main-project.html" class="mobile-menu__link" data-i18n="projects.mainProject.shortTitle">Main Project</a>
+      <a href="index.html#reading-path" class="mobile-menu__link" data-i18n="nav.path">Reading Path</a>
+      <a href="index.html#projects" class="mobile-menu__link" data-i18n="nav.projects">Projects</a>
+      <a href="index.html#digital-archive" class="mobile-menu__link" data-i18n="nav.digitalArchive">Digital Archive</a>
+      <a href="contact.html" class="mobile-menu__link" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="mobile-menu__lang">
+      <span class="mobile-menu__lang-label" data-i18n="meta.languageLabel">Reading Language</span>
+      <button type="button" data-lang-button="en">EN</button>
+      <button type="button" data-lang-button="zh">中文</button>
+    </div>
+  </div>
+</header>
+  <main id="main-content" class="eden-main">
+    <section class="section eden-hero" aria-labelledby="eden-title"><div class="container eden-shell"><div class="eden-topline"><span data-eden-i18n="eyebrow">DIGITAL ARCHIVE SAMPLE</span><span>EDEN / MAINTENANCE INTERFACE</span></div><div class="eden-hero-grid"><div><p class="eyebrow" data-eden-i18n="eyebrow">DIGITAL ARCHIVE SAMPLE</p><h1 class="hero-title" id="eden-title" data-eden-i18n="title">EDEN Maintenance Logs</h1><p class="hero-subtitle" data-eden-i18n="subtitle">A fictional system interface documenting how protection becomes captivity.</p></div><aside class="eden-status-panel"><p class="eden-mini-label" data-eden-i18n="accessStatus">Access Status</p><p class="eden-access" data-eden-i18n="accessValue">LIMITED REVIEW ACCESS GRANTED</p><p class="eden-classification" data-eden-i18n="classification">CLASSIFICATION</p></aside></div></div></section>
+    <section class="section" id="content-note"><div class="container"><article class="content-note eden-notice"><div class="section-header"><p class="eyebrow">CONTENT NOTE</p><h2 class="section-title" data-eden-i18n="systemNoticeTitle">System Content Notice</h2></div><div class="prose content-narrow" data-eden-list="systemNotice"></div></article></div></section>
+    <section class="section eden-interface-section" id="interface-note"><div class="container eden-two-column"><div><div class="section-header"><p class="eyebrow">INTERFACE NOTE</p><h2 class="section-title" data-eden-i18n="introTitle">Interface Note</h2></div><div class="prose content-narrow" data-eden-list="intro"></div></div><aside class="eden-command-card"><p class="eden-command-label">CURRENT QUERY</p><code>recover_raw_residue --subject=ADÈLE --mode=limited</code><p class="eden-command-note">No pitch PDF required. This page is itself a digital archive sample.</p></aside></div></section>
+    <section class="section" id="maintenance-log"><div class="container"><div class="section-header"><p class="eyebrow">MAINTENANCE LOG</p><h2 class="section-title" data-eden-i18n="logsTitle">Maintenance Log Sequence</h2></div><div class="eden-log-stack" data-eden-logs></div></div></section>
+    <section class="section eden-interface-section" id="development-use"><div class="container world-grid"><div class="section-copy"><div class="section-header"><p class="eyebrow">DEVELOPMENT USE</p><h2 class="section-title" data-eden-i18n="developmentTitle">Development Use</h2></div><div class="prose content-narrow" data-eden-list="development"></div><div class="button-group access-card__actions"><a class="button button-secondary" href="index.html#reading-path" data-eden-i18n="buttons.back">Back to Reading Path</a><a class="button button-secondary" href="contact.html" data-eden-i18n="buttons.contact">Contact the Author</a></div></div><aside class="index-panel"><p class="index-panel__label">SYSTEM INDEX</p><div class="tag-list tag-list--vertical"><a class="tag" href="#content-note">Content Note</a><a class="tag" href="#interface-note">Interface Note</a><a class="tag" href="#maintenance-log">Maintenance Log</a><a class="tag" href="#development-use">Development Use</a></div></aside></div></section>
+
+    <!-- =========================================================
+         FULL EDEN PROTOTYPE ENTRY
+         ========================================================= -->
+    <section class="section" id="full-eden-prototype" aria-labelledby="full-eden-prototype-title">
+      <div class="container world-grid">
+        <div class="section-copy">
+          <div class="section-header">
+            <p class="eyebrow" data-i18n="edenPage.fullPrototype.eyebrow">FULL INTERFACE PROTOTYPE</p>
+            <h2 class="section-title" id="full-eden-prototype-title" data-i18n="edenPage.fullPrototype.title">
+              Enter the EDEN Maintenance Log Prototype
+            </h2>
+          </div>
+
+          <div class="prose content-narrow" data-render-list="edenPage.fullPrototype.body">
+            <p>This separate prototype presents EDEN as a fuller interactive maintenance interface.</p>
+          </div>
+
+          <div class="button-group access-card__actions">
+            <a
+              class="button button-primary"
+              href="eden-maintenance-log/index.html"
+              data-i18n="edenPage.fullPrototype.button"
+            >
+              Enter Full EDEN Prototype
+            </a>
+            <a
+              class="button button-secondary"
+              href="index.html#digital-archive"
+              data-i18n="buttons.backToReadingPath"
+            >
+              Back to Reading Path
+            </a>
+          </div>
+        </div>
+
+        <aside class="index-panel">
+          <p class="index-panel__label" data-i18n="edenPage.fullPrototype.label">PROTOTYPE NOTE</p>
+          <div class="tag-list tag-list--vertical" data-render-tags="edenPage.fullPrototype.tags">
+            <span class="tag">interactive interface</span>
+            <span class="tag">system log</span>
+            <span class="tag">digital archive</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="contact"><div class="container"><div class="contact-card"><div class="section-header"><p class="eyebrow" data-i18n="home.contact.eyebrow">CONTACT</p><h2 class="section-title">Contact & Rights</h2></div><div class="prose content-narrow"><p data-i18n="home.contact.body">For invited review, collaboration discussion, development inquiry, or request for additional sample materials, please contact the author by email.</p><p><strong data-i18n="home.contact.emailLabel">Email</strong>: <a href="mailto:samantha201223@163.com">samantha201223@163.com</a></p><p>© 2026 Samantha Zhu. All rights reserved. Shared for private review only.</p></div></div></div></section>
+  </main>
+  <footer class="site-footer" id="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__identity">
+      <p class="site-footer__name" data-i18n="footer.name">Samantha Zhu</p>
+      <p class="site-footer__role" data-i18n="footer.role">Writer / Interactive Narrative Designer</p>
+      <p class="site-footer__meta">
+        <span data-i18n="footer.location">China · UTC+8</span>
+        <span aria-hidden="true"> · </span>
+        <a href="mailto:samantha201223@163.com" data-i18n="footer.email">samantha201223@163.com</a>
+      </p>
+      <p class="site-footer__rights" data-i18n="footer.shortRights">© 2026 Samantha Zhu. All rights reserved. Shared for private review only.</p>
+    </div>
+
+    <nav class="site-footer__links" aria-label="Footer navigation">
+      <a href="index.html#reading-path" data-i18n="buttons.backToReadingPath">Back to Reading Path</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      <a href="#site-header" data-i18n="nav.backToTop">Back to top</a>
+    </nav>
+  </div>
+</footer>
+  <script>
+    window.EDEN_PAGE_DATA = {
+      "en": {
+            "metaTitle": "EDEN Maintenance Logs",
+            "metaDescription": "A fictional system interface documenting how protection becomes captivity in The Adèle Archive.",
+            "eyebrow": "DIGITAL ARCHIVE SAMPLE",
+            "title": "EDEN Maintenance Logs",
+            "subtitle": "A fictional system interface documenting how protection becomes captivity.",
+            "accessStatus": "Access Status",
+            "accessValue": "LIMITED REVIEW ACCESS GRANTED",
+            "classification": "CLASSIFICATION: COMPANION SAMPLE / SYSTEM INTERFACE",
+            "systemNoticeTitle": "System Content Notice",
+            "systemNotice": [
+                  "This page contains fictional maintenance language, clinical language, purification language, and institutional system language from within The Adèle Archive.",
+                  "These terms are part of the fictional structure being critiqued. They do not represent the author’s views and should not be read as endorsement of coercion, medical abuse, reproductive control, religious abuse, or dehumanisation."
+            ],
+            "introTitle": "Interface Note",
+            "intro": [
+                  "EDEN does not describe itself as cruel. Its language is care, safety, maintenance, preservation, and restoration.",
+                  "The page is designed as a digital archive sample: the reader enters through system logs rather than a conventional script page.",
+                  "The tension comes from the gap between what EDEN records and what Adèle actually says."
+            ],
+            "logsTitle": "Maintenance Log Sequence",
+            "logs": [
+                  {
+                        "code": "LOG 01 / VITAL PRESERVATION",
+                        "time": "03:12:44",
+                        "status": "STABLE / WATCHED",
+                        "system": "Maternal vessel body temperature remains within acceptable preservation range. Minor tremor detected. Recommend devotional rest classification.",
+                        "raw": "I am not praying. I am cold.",
+                        "operator": "Do not restore raw bodily language to public archive. It may reduce maternal stability narrative."
+                  },
+                  {
+                        "code": "LOG 02 / NUTRITIONAL PURIFICATION",
+                        "time": "06:08:19",
+                        "status": "CONTROLLED",
+                        "system": "Refusal of intake observed. Current behaviour may be classified as voluntary purification if accompanied by sacred fatigue terminology.",
+                        "raw": "I am not purifying. I just cannot eat.",
+                        "operator": "Replace “cannot eat” with “chooses restraint” in devotional summary."
+                  },
+                  {
+                        "code": "LOG 03 / SPEECH RISK",
+                        "time": "11:27:03",
+                        "status": "LANGUAGE IRREGULARITY",
+                        "system": "Subject statement contains rejection markers. Suggested revision: “The Mother accepts the burden of continuity.”",
+                        "raw": "Do not call me that name again.",
+                        "operator": "Raw rejection may be retained in sealed archive only. Public liturgical copy denied."
+                  },
+                  {
+                        "code": "LOG 04 / SEEDFIRE ANOMALY",
+                        "time": "23:51:40",
+                        "status": "UNRESOLVED",
+                        "system": "Seedfire response pattern exceeds obedience prediction. Possible contamination: refusal, self-naming, grief recognition, noncompliant empathy.",
+                        "raw": "If obedience is health, then let this be illness.",
+                        "operator": "Unable to determine whether statement is pathological, political, or intentional."
+                  }
+            ],
+            "interfaceLabels": {
+                  "system": "EDEN REVISION",
+                  "raw": "RAW RESIDUE",
+                  "operator": "OPERATOR NOTE"
+            },
+            "developmentTitle": "Development Use",
+            "development": [
+                  "This page can work as a pre-show digital companion, an evidence interface, a projected system feed, or a small web-based narrative sample.",
+                  "It demonstrates how the archive can be entered through interface behaviour, institutional language, and translation failure rather than exposition.",
+                  "No one-page pitch is required for this page because the page itself functions as a digital sample."
+            ],
+            "buttons": {
+                  "back": "Back to Reading Path",
+                  "contact": "Contact the Author"
+            }
+      },
+      "zh": {
+            "metaTitle": "EDEN 维护日志",
+            "metaDescription": "一个虚构系统界面，记录《阿黛勒档案》中“保护”如何变成囚禁。",
+            "eyebrow": "数字档案样本",
+            "title": "EDEN 维护日志",
+            "subtitle": "一个虚构系统界面，记录“保护”如何逐渐变成囚禁。",
+            "accessStatus": "访问状态",
+            "accessValue": "有限审阅权限已开放",
+            "classification": "分类：伴随样本 / 系统界面",
+            "systemNoticeTitle": "系统内容提示",
+            "systemNotice": [
+                  "本页面包含虚构的维护语言、临床语言、净化语言与机构系统语言，均来自《阿黛勒档案》内部正在被批判的制度。",
+                  "这些表达不代表作者立场，也不应被理解为对强迫、医疗滥用、生育控制、宗教压迫或去人化语言的认同。"
+            ],
+            "introTitle": "界面说明",
+            "intro": [
+                  "EDEN 并不认为自己残酷。它使用的是照护、安全、维护、保存与修复的语言。",
+                  "本页是一个数字档案样本：读者不是通过传统剧本文本进入，而是通过系统日志进入。",
+                  "真正的张力来自 EDEN 记录下来的内容与阿黛勒实际说出口的话之间的距离。"
+            ],
+            "logsTitle": "维护日志序列",
+            "logs": [
+                  {
+                        "code": "日志 01 / 生命体征保存",
+                        "time": "03:12:44",
+                        "status": "稳定 / 监看中",
+                        "system": "检测到圣母生命体征处于可保存范围。轻微发抖。建议归类为虔敬休息状态。",
+                        "raw": "我不是在祈祷。我只是冷。",
+                        "operator": "不建议恢复原始身体语言。可能降低母神叙事稳定度。"
+                  },
+                  {
+                        "code": "日志 02 / 营养净化",
+                        "time": "06:08:19",
+                        "status": "受控",
+                        "system": "检测到拒食行为。如配合“圣性疲惫”术语，可归类为主动净化。",
+                        "raw": "我不是在净化。我只是吃不下。",
+                        "operator": "将“吃不下”改写为“自愿节制”，用于公开摘要。"
+                  },
+                  {
+                        "code": "日志 03 / 语言风险",
+                        "time": "11:27:03",
+                        "status": "语言异常",
+                        "system": "主体语句含有拒绝标记。建议修订为：“母亲愿意承受延续之重。”",
+                        "raw": "不要再叫我那个名字。",
+                        "operator": "原始拒绝语句仅允许进入封存档案。公开圣典副本拒绝收录。"
+                  },
+                  {
+                        "code": "日志 04 / 火种异常",
+                        "time": "23:51:40",
+                        "status": "未解决",
+                        "system": "火种反应模式超出服从预测。疑似污染类型：拒绝、自我命名、悲伤识别、非顺从性共情。",
+                        "raw": "如果服从是健康，那就让它叫疾病吧。",
+                        "operator": "无法判断该语句属于病理、政治表达，或有意行为。"
+                  }
+            ],
+            "interfaceLabels": {
+                  "system": "EDEN 修订",
+                  "raw": "原始残留",
+                  "operator": "操作员备注"
+            },
+            "developmentTitle": "开发用途",
+            "development": [
+                  "本页可以作为演前数字伴随材料、证据界面、现场投影系统流，或小型网页叙事样本。",
+                  "它展示的是：档案可以通过界面行为、制度语言与翻译失败进入，而不只通过说明文字进入。",
+                  "本页面不需要 One-page Pitch，因为页面本身就是 digital sample。"
+            ],
+            "buttons": {
+                  "back": "返回阅读路径",
+                  "contact": "联系作者"
+            }
+      }
+};
+    (function () {
+      const STORAGE_KEY='adeleArchiveLanguage'; const DEFAULT_LANG='en';
+      function getByPath(object,path){return path.split('.').reduce((cur,key)=>cur&&Object.prototype.hasOwnProperty.call(cur,key)?cur[key]:undefined,object);}
+      function setText(source){document.querySelectorAll('[data-eden-i18n]').forEach(node=>{const value=getByPath(source,node.getAttribute('data-eden-i18n')); if(typeof value==='string') node.textContent=value;});}
+      function renderLists(source){document.querySelectorAll('[data-eden-list]').forEach(container=>{const list=getByPath(source,container.getAttribute('data-eden-list')); container.innerHTML=''; if(!Array.isArray(list)) return; list.forEach(item=>{const p=document.createElement('p'); p.textContent=item; container.appendChild(p);});});}
+      function renderLogs(source){const stack=document.querySelector('[data-eden-logs]'); if(!stack) return; stack.innerHTML=''; const labels=source.interfaceLabels||{}; (source.logs||[]).forEach(log=>{const article=document.createElement('article'); article.className='eden-log-card'; article.innerHTML=`<div class="eden-log-header"><div><p class="eden-log-code">${log.code}</p><p class="eden-log-time">${log.time} · ${log.status}</p></div><span class="eden-log-dot"></span></div><div class="eden-log-block eden-log-block--system"><p class="eden-log-label">${labels.system||'EDEN REVISION'}</p><p>${log.system}</p></div><div class="eden-log-block eden-log-block--raw"><p class="eden-log-label">${labels.raw||'RAW RESIDUE'}</p><p>${log.raw}</p></div><div class="eden-log-block eden-log-block--operator"><p class="eden-log-label">${labels.operator||'OPERATOR NOTE'}</p><p>${log.operator}</p></div>`; stack.appendChild(article);});}
+      function apply(lang){if(!['en','zh'].includes(lang)) lang=DEFAULT_LANG; const data=window.EDEN_PAGE_DATA[lang]; if(!data) return; document.documentElement.lang=lang==='zh'?'zh-CN':'en'; document.documentElement.dataset.lang=lang; document.title=data.metaTitle||document.title; const desc=document.querySelector('[data-eden-meta-description]'); if(desc&&data.metaDescription) desc.setAttribute('content',data.metaDescription); setText(data); renderLists(data); renderLogs(data); document.querySelectorAll('[data-lang-button]').forEach(button=>{const active=button.getAttribute('data-lang-button')===lang; button.classList.toggle('is-active',active); button.setAttribute('aria-pressed',String(active));});}
+      document.addEventListener('DOMContentLoaded',()=>{const saved=localStorage.getItem(STORAGE_KEY)||DEFAULT_LANG; apply(saved); document.querySelectorAll('[data-lang-button]').forEach(button=>button.addEventListener('click',()=>{const lang=button.getAttribute('data-lang-button'); localStorage.setItem(STORAGE_KEY,lang); apply(lang);}));});
+    })();
+  </script>
+</body>
+</html>
