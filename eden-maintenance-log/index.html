@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=20260623-export3" />
 </head>
 <body>
   <noscript>
@@ -25,7 +25,9 @@
         <h1>ARCHIVE ACCESS LANGUAGE</h1>
         <div class="content-notice" role="note" aria-label="Content notice">
           <div class="notice-title">CONTENT NOTICE / 内容提醒</div>
-          <div class="notice-grid">
+          <p class="notice-summary">本互动档案涉及身体自主权、制度化母职神话、医疗化控制、沉默与拒绝等主题。页面不收集玩家数据。</p>
+          <button id="contentNoteToggleBtn" class="inline-command notice-toggle" type="button" aria-expanded="true" aria-controls="contentNoticeFull">[ VIEW_FULL_CONTENT_NOTE ]</button>
+          <div id="contentNoticeFull" class="notice-grid">
             <div>
               <p>本互动档案包含以下主题：身体自主权被剥夺、制度化母职神话、医疗/生命维持系统中的控制、疼痛记录、拒食、沉默与拒绝被重新命名、档案删除，以及心理压迫。</p>
               <p>作品批判的是把女性、母职、身体、名字与痛苦工具化的制度；并不否定真实的母亲、照护者、宗教经验或任何人的身份选择。</p>
@@ -75,10 +77,13 @@
         <div class="topbar-meta">
           <span>ARCHIVE: ADEL-SPET / MOTHER-GODDESS / RESTRICTED</span>
           <span>OPERATOR: TEMP-MAINT-07</span>
+          <span>BUILD: EXPORT-3 / 2026-06-23</span>
           <span id="sessionStatus">STATUS: LIVE</span>
           <button id="langSwitchBtn" class="inline-command" type="button">SWITCH_TO_EN</button>
         </div>
       </header>
+
+      <div id="mobileProgress" class="mobile-progress panel" aria-label="Compact maintenance progress"></div>
 
       <aside class="panel task-panel">
         <div class="panel-title">TASK INDEX</div>
@@ -93,6 +98,7 @@
 
       <aside class="panel output-panel">
         <div class="panel-title">SYSTEM OUTPUT</div>
+        <button id="metricsToggleBtn" class="inline-command metrics-toggle" type="button" aria-expanded="false" aria-controls="metrics">[ VIEW_SYSTEM_INDICES ]</button>
         <div id="metrics" class="metrics"></div>
         <div class="system-message" id="systemMessage">
           <p>> Awaiting maintenance command.</p>
@@ -120,17 +126,31 @@
 
     <section id="resultScreen" class="result-screen screen" aria-label="Archive output receipt">
       <div class="receipt-wrap">
+        <div id="resultExplanation" class="result-explanation panel"></div>
+        <details id="processedTrace" class="maintenance-trace panel">
+          <summary id="processedTraceTitle">[ VIEW_MAINTENANCE_TRACE ]</summary>
+          <div id="processedTraceList" class="trace-list"></div>
+        </details>
         <div id="receipt" class="receipt panel"></div>
+        <div id="resultRestartHint" class="restart-hint"></div>
+        <div class="dossier-return panel">
+          <p id="dossierIntro">This record is part of The Adèle Archive.</p>
+          <a href="#" id="dossierLink" class="command-btn is-disabled" aria-disabled="true">[ PROJECT_DOSSIER_COMING_SOON ]</a>
+        </div>
         <div class="receipt-actions">
-          <button id="downloadBtn" class="command-btn" type="button">[ DOWNLOAD_RECORD_IMAGE ]</button>
+          <button id="downloadSimpleBtn" class="command-btn" type="button">[ DOWNLOAD_SIMPLE_CARD ]</button>
+          <button id="downloadArchiveBtn" class="command-btn" type="button">[ DOWNLOAD_ARCHIVE_CARD ]</button>
+          <button id="downloadFullBtn" class="command-btn" type="button">[ DOWNLOAD_FULL_RECEIPT ]</button>
+          <button id="copyShareTextBtn" class="command-btn" type="button">[ COPY_SHARE_TEXT ]</button>
           <button id="restartBtn" class="command-btn" type="button">[ RESTART_SESSION ]</button>
         </div>
+        <div id="shareStatus" class="share-status" role="status" aria-live="polite"></div>
       </div>
     </section>
   </div>
 
-  <script src="js/data.js"></script>
-  <script src="js/result.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/data.js?v=20260623-export3"></script>
+  <script src="js/result.js?v=20260623-export3"></script>
+  <script src="js/app.js?v=20260623-export3"></script>
 </body>
 </html>
